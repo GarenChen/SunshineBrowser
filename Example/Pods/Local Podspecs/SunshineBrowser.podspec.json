@@ -1,0 +1,26 @@
+{
+  "name": "SunshineBrowser",
+  "version": "0.1.0",
+  "summary": "A short description of SunshineBrowser.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/GarenChen/SunshineBrowser",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "GarenChen": "915574843@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/GarenChen/SunshineBrowser.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SunshineBrowser/Classes/**/*",
+  "resources": [
+    "SunshineBrowser/Assets/*.bundle",
+    "SunshineBrowser/Assets/*.storyboard"
+  ]
+}

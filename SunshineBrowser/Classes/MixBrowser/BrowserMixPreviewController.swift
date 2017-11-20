@@ -1,0 +1,174 @@
+//
+//  BrowserMixPreviewController.swift
+//  SunshineBrowser
+//
+//  Created by ChenGuangchuan on 2017/11/19.
+//  Copyright © 2017年 cgc. All rights reserved.
+//
+
+import UIKit
+
+public class BrowserMixPreviewController: BaseGestureAnimationController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var models: [BrowserPreviewModel] = []
+    
+    var currentItemIndex: Int = 0
+    
+    static var controllerViewFrame: CGRect {
+        return UIScreen.main.bounds
+    }
+
+    override var animationPlaceholderImage: UIImage? {
+        switch models[currentItemIndex] {
+        case .image(let image):
+            return image
+        case let .videoURL(_, image), let .imageURLString(_, image), let .videoURLString(_, image):
+            return image
+        }
+    }
+    
+    override var handlingView: UIView? {
+        return (collectionView.cellForItem(at: IndexPath(item: currentItemIndex, section: 0)) as? PreviewContentType)?.handlingView
+    }
+
+	public class func show(in controller: UIViewController, models: [BrowserPreviewModel], selectedIndex: Int = 0, originalFrame: CGRect?, config: BrowserConfig = BrowserConfig()) -> BrowserMixPreviewController {
+		
+		BrowserConfig.shared.imageLoader = config.imageLoader
+		BrowserConfig.shared.videoLoader = config.videoLoader
+		BrowserConfig.shared.imageProgressIndicator = config.imageProgressIndicator
+		BrowserConfig.shared.videoProgressIndicator = config.videoProgressIndicator
+		
+        let storyboard = UIStoryboard(name: "Browser", bundle: Bundle.current)
+        let controller = storyboard.instantiateViewController(withIdentifier: "BrowserMixPreviewController") as! BrowserMixPreviewController
+        
+        controller.modalPresentationStyle = .custom
+        
+        var placeholderImage: UIImage? {
+            switch models[selectedIndex] {
+            case .image(let image):
+                return image
+            case let .videoURL(_, image), let .imageURLString(_, image), let .videoURLString(_, image):
+                return image
+            }
+        }
+        controller.customTransitionDelegate = BrowserTransitionDelegate(placeholderImage: placeholderImage, originFrame: originalFrame, destinationFrame: BrowserMixPreviewController.controllerViewFrame)
+        controller.models = models
+        controller.currentItemIndex = selectedIndex
+        return controller
+    }
+    
+    override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
+    }
+    
+    public required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
+    public override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        title = " "
+        
+        if #available(iOS 11, *) {
+            collectionView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
+    }
+	
+	public override func viewWillAppear(_ animated: Bool) {
+		super.viewWillAppear(animated)
+		if currentItemIndex < models.count {
+			view.layoutIfNeeded()
+			collectionView.scrollToItem(at: IndexPath(item: currentItemIndex, section: 0), at: .centeredHorizontally, animated: false)
+		}
+	}
+    
+    public override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return models.count
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let model = models[indexPath.item]
+        
+        switch model {
+        case .image(let image):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoPreviewCell", for: indexPath) as! PhotoPreviewCell
+            cell.image = image
+            cell.tapConentToHideBar = {
+                
+            }
+            return cell
+			
+		case let .imageURLString(urlString, image):
+			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoPreviewCell", for: indexPath) as! PhotoPreviewCell
+			cell.model = (urlString, image)
+			cell.tapConentToHideBar = {
+				
+			}
+			return cell
+            
+        case let .videoURL(url, image):
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoPreviewCell", for: indexPath) as! VideoPreviewCell
+            cell.model = (url, image)
+            cell.tapConentToHideBar = {
+                
+            }
+            return cell
+			
+		case let .videoURLString(urlString, image):
+			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoPreviewCell", for: indexPath) as! VideoPreviewCell
+			cell.urlStringModel = (urlString, image)
+			cell.tapConentToHideBar = {
+				
+			}
+			return cell
+			
+        }
+
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        
+        for cell in collectionView.visibleCells {
+            (cell as? PreviewContentType)?.recoverSubview()
+        }
+        
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: BrowserMixPreviewController.controllerViewFrame.size.width + 20, height:  BrowserMixPreviewController.controllerViewFrame.size.height)
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetWidth = scrollView.contentOffset.x + collectionView.frame.size.width * 0.5
+        let currentItem = Int(offsetWidth / collectionView.frame.size.width)
+        if currentItemIndex != currentItem {
+            currentItemIndex = currentItem
+            
+        }
+    }
+
+}

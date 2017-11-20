@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07AF31E8125E892A2E1D5E1926956220 /*  ProgressIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D7EC945540710F6EE80A45A5643059 /*  ProgressIndicatorType.swift */; };
+		0B0121712619912F3A0ACBAC2C43F880 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AED903160B8EAA5DB6CF5746B716A5A7 /* PlayerView.m */; };
+		0CC47A0E2C79D3FE36961D388AFE0ACD /* Pods-SunshineBrowser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4540A8456711DDD8308C49929AD5E926 /* Pods-SunshineBrowser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		10DEB548DB4C6CFC352B0FFFE0D9FA3D /* SunshineBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0932C30B9EF1F16A791CD71749F9BBB0 /* SunshineBrowser.bundle */; };
+		13462E48C4F8032E098D49BA2FC60DF3 /* BaseGestureAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8C94936A345184F8733571CE0F5FD /* BaseGestureAnimationController.swift */; };
+		23200F896901546B66181D359339F504 /* PlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFD370E4EF3EDD2700EE710D70285DB /* PlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25B9842430D88A8B2E3603582A4CC8F4 /* DefaultLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F7289A08345EE9C9C59BF8B6EF84A /* DefaultLoadingIndicator.swift */; };
+		2C78F2CD6A69446B52E8A0A079FA936B /* BrowserTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47539327A6A0675A43A278E6EE01806 /* BrowserTransitionAnimator.swift */; };
+		2D8898454BDADA345957A694D05CD98B /* Pods-SunshineBrowser_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A76E7344A83F656FB3F71166C5AEFB /* Pods-SunshineBrowser_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FDAB6DEAC5F747DBED8F240297B3930 /* BrowserPhotoPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363246B52056E194932F965B9DAAAF3 /* BrowserPhotoPreviewController.swift */; };
+		3C2E33CD5D2AEE338849A32D1FB6BA96 /* DefaultImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC3144DA2B0B8D8D3297CE50FBA282B /* DefaultImageLoader.swift */; };
+		3CF269F9C5C34412D8120E3C4F6909EB /* UIImage+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B605D7F4741E1C2F5EB4E52EA71EE6C /* UIImage+Current.swift */; };
+		4019C38C5BE24E600C12532EACBF55D1 /* Browser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6949B9E69601700E6326EE7CD6BBA86C /* Browser.storyboard */; };
+		47B38DFB0B9FD868F30CA732E8004AF0 /* SinglePhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4642D823399BC1E3041212EC3312EF /* SinglePhotoPreviewCell.swift */; };
+		4CF7E966A766018A83C2D467124C06F3 /* BrowserMixPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F1908868ADA608DB631EE1CB88829 /* BrowserMixPreviewController.swift */; };
+		58680BCAD227855E46C7E4462161F313 /* PreviewContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B6AC47DEC7465C5D787F33A161A0C /* PreviewContentType.swift */; };
+		64FCE5BC2515579091A8BF89ADF22B92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		7B24AB7973F1D982490D557AD6CB9742 /* VideoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332FD29AD9768029AC29927BB9F2F48 /* VideoPreviewCell.swift */; };
+		83CB32774B22079685E2EDE225010BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		8586FA8528E7FF9EA56EADCF7C3FC1DB /* DefaultVideoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A11623F0CCC0F7C13EADBD4D63AF /* DefaultVideoLoader.swift */; };
+		85C9A88A4E9635D20679FABCB36CE584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		98099DE28F3A29297264ECC02F989039 /* Pods-SunshineBrowser_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B3FC2C81928A88F32DD29C8AD7170 /* Pods-SunshineBrowser_Example-dummy.m */; };
+		A1683338957533763ECDBDFBD65CB4CF /* BrowserConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EDD2E1A153F9E478FE7D3E8181798 /* BrowserConfig.swift */; };
+		AA695370F67ADD9DCCA73E8812F10AF5 /* BrowserTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15700F90E74FF1E2F561423E28B372E3 /* BrowserTransitionDelegate.swift */; };
+		B67F76A25ED9D64AADB1C1664F0DA49D /* BrowserPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B78E939FD3C3BA6E341CE0F053D8C4 /* BrowserPreviewModel.swift */; };
+		B86BD4798E749AA7AE36183114486A54 /* SunshineBrowser-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E76BAD00E4827EBE2D4D71F00058BC6 /* SunshineBrowser-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9CBE0B39D14CAEDB546FF052C47154F /* LoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B853C5BDAF393F2C490361C3C8E163 /* LoaderType.swift */; };
+		CCB5B35F4661BCB6D4241F9EBB091066 /* PhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB546C407C49782AC6D284A50EF294 /* PhotoPreviewCell.swift */; };
+		DDA827DB40ABC8F6A3429B7135D6F89A /* Pods-SunshineBrowser_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C19C81645AB3C0112580449AC3BB40C9 /* Pods-SunshineBrowser_Tests-dummy.m */; };
+		E5FBEA6F71936DED04861B08C4DFC21C /* SunshineBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A316095DF5F1EBD68D0B605E51B193D8 /* SunshineBrowser-dummy.m */; };
+		E7DF323D285E956338E48C209AA7F56A /* SunshineBrowser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F34132F2F86A9ADBE0460CFFA711174B /* SunshineBrowser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E901F43CE3327A31FAF0623E170C1756 /* BrowserCustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD9EEAF28764842DABD350DB497DB7 /* BrowserCustomPresentationController.swift */; };
+		FD1CDB603E275252D476ED207CE933DF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1D2CA1A5BC420602C3B5B837EA83B6 /* Bundle+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		17860E123D8239C7125E68552179B774 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6B611D5CD2B8CCD537313C3F9A7F8410;
+			remoteInfo = SunshineBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03DA2089B1A5066508DB1AF96E47EBC2 /* SunshineBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-prefix.pch"; sourceTree = "<group>"; };
+		06E64E010134A2D4A72769C515FB88ED /* SunshineBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineBrowser.modulemap; sourceTree = "<group>"; };
+		0932C30B9EF1F16A791CD71749F9BBB0 /* SunshineBrowser.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SunshineBrowser.bundle; path = SunshineBrowser/Assets/SunshineBrowser.bundle; sourceTree = "<group>"; };
+		09A76E7344A83F656FB3F71166C5AEFB /* Pods-SunshineBrowser_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineBrowser_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0A540BDF0195FB17D22AA3EBE43C7832 /* Pods-SunshineBrowser_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Tests-resources.sh"; sourceTree = "<group>"; };
+		14E4A11623F0CCC0F7C13EADBD4D63AF /* DefaultVideoLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultVideoLoader.swift; sourceTree = "<group>"; };
+		15700F90E74FF1E2F561423E28B372E3 /* BrowserTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionDelegate.swift; sourceTree = "<group>"; };
+		20CB546C407C49782AC6D284A50EF294 /* PhotoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCell.swift; sourceTree = "<group>"; };
+		230EDD2E1A153F9E478FE7D3E8181798 /* BrowserConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserConfig.swift; sourceTree = "<group>"; };
+		2363246B52056E194932F965B9DAAAF3 /* BrowserPhotoPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPhotoPreviewController.swift; sourceTree = "<group>"; };
+		267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineBrowser.xcconfig; sourceTree = "<group>"; };
+		28B206CAD681A7CFDB736AD9C6A1C792 /* Pods-SunshineBrowser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3763D2AE7716F6D118010C7E9312DC4C /* Pods-SunshineBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3A4642D823399BC1E3041212EC3312EF /* SinglePhotoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePhotoPreviewCell.swift; sourceTree = "<group>"; };
+		3B7F7289A08345EE9C9C59BF8B6EF84A /* DefaultLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLoadingIndicator.swift; sourceTree = "<group>"; };
+		445764ABC9D9EC5F0A67139809AAE7CD /* Pods-SunshineBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4540A8456711DDD8308C49929AD5E926 /* Pods-SunshineBrowser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineBrowser_Example-umbrella.h"; sourceTree = "<group>"; };
+		45AD9EEAF28764842DABD350DB497DB7 /* BrowserCustomPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserCustomPresentationController.swift; sourceTree = "<group>"; };
+		4FFD370E4EF3EDD2700EE710D70285DB /* PlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		51AAFBC4FBFE5BA923E4E75B45449182 /* Pods_SunshineBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineBrowser_Tests.framework; path = "Pods-SunshineBrowser_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51B78E939FD3C3BA6E341CE0F053D8C4 /* BrowserPreviewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPreviewModel.swift; sourceTree = "<group>"; };
+		535DA59D1A8445E1DEC97C7FDB3BDEE0 /* Pods-SunshineBrowser_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		5B7B6AC47DEC7465C5D787F33A161A0C /* PreviewContentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreviewContentType.swift; sourceTree = "<group>"; };
+		5CC3144DA2B0B8D8D3297CE50FBA282B /* DefaultImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultImageLoader.swift; sourceTree = "<group>"; };
+		60A973C9567E2C94AA5477AAAB6F205A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635F1908868ADA608DB631EE1CB88829 /* BrowserMixPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserMixPreviewController.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6896BE1A097574863EA3A3D21B7CCBF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6949B9E69601700E6326EE7CD6BBA86C /* Browser.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Browser.storyboard; path = SunshineBrowser/Assets/Browser.storyboard; sourceTree = "<group>"; };
+		6E76BAD00E4827EBE2D4D71F00058BC6 /* SunshineBrowser-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
+		6FC8C94936A345184F8733571CE0F5FD /* BaseGestureAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseGestureAnimationController.swift; sourceTree = "<group>"; };
+		72FC85895E6559E0C640EA660D5E14CE /* Pods-SunshineBrowser_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Example-resources.sh"; sourceTree = "<group>"; };
+		7847E700AA09200E0A5E86DCC9348141 /* Pods-SunshineBrowser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineBrowser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D6E9FE4AF9560609A7BA54D1367AF36 /* Pods_SunshineBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineBrowser_Example.framework; path = "Pods-SunshineBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		81B853C5BDAF393F2C490361C3C8E163 /* LoaderType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoaderType.swift; sourceTree = "<group>"; };
+		86D7EC945540710F6EE80A45A5643059 /*  ProgressIndicatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = " ProgressIndicatorType.swift"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B605D7F4741E1C2F5EB4E52EA71EE6C /* UIImage+Current.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Current.swift"; sourceTree = "<group>"; };
+		9FA75EDC42BC5B47AD15DCDDB3CDB5AF /* SunshineBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshineBrowser.framework; path = SunshineBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A23383D17F1D8FEEAAE24424F77A15A1 /* Pods-SunshineBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A316095DF5F1EBD68D0B605E51B193D8 /* SunshineBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshineBrowser-dummy.m"; sourceTree = "<group>"; };
+		AED903160B8EAA5DB6CF5746B716A5A7 /* PlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		C19C81645AB3C0112580449AC3BB40C9 /* Pods-SunshineBrowser_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineBrowser_Tests-dummy.m"; sourceTree = "<group>"; };
+		C332FD29AD9768029AC29927BB9F2F48 /* VideoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoPreviewCell.swift; sourceTree = "<group>"; };
+		CA1D2CA1A5BC420602C3B5B837EA83B6 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		CA1E2BA04B93AAD6934592BAF4DE23FF /* Pods-SunshineBrowser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineBrowser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D47539327A6A0675A43A278E6EE01806 /* BrowserTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionAnimator.swift; sourceTree = "<group>"; };
+		E801D6DF37068CF600132EF26D241C6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F34132F2F86A9ADBE0460CFFA711174B /* SunshineBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-umbrella.h"; sourceTree = "<group>"; };
+		F65A8A966D1744D3633020124800071F /* Pods-SunshineBrowser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineBrowser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		FA185D93A44F026851F90A79D87BCB45 /* Pods-SunshineBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FCE255941D946E5C39753B679DD89922 /* Pods-SunshineBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineBrowser_Example.modulemap"; sourceTree = "<group>"; };
+		FE47D8EBED83FBE89810ADA40A68DB1D /* Pods-SunshineBrowser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineBrowser_Tests.modulemap"; sourceTree = "<group>"; };
+		FE4B3FC2C81928A88F32DD29C8AD7170 /* Pods-SunshineBrowser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineBrowser_Example-dummy.m"; sourceTree = "<group>"; };
+		FEA0DDB57D023FD8F4FAADF171CEBD75 /* Pods-SunshineBrowser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineBrowser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91645B4F18B4DE8C4B9D33A1EB08FD1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83CB32774B22079685E2EDE225010BAB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF89EE2B8F15E6724DECB651A1CE1313 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C9A88A4E9635D20679FABCB36CE584 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D676AFE2377B4D41E6B9F275BAB6D120 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64FCE5BC2515579091A8BF89ADF22B92 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		033C63A13D343906214458E46DDF85BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6949B9E69601700E6326EE7CD6BBA86C /* Browser.storyboard */,
+				0932C30B9EF1F16A791CD71749F9BBB0 /* SunshineBrowser.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1B37AA9B1114DBFDF732157FE0B5D574 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6896BE1A097574863EA3A3D21B7CCBF3 /* Info.plist */,
+				06E64E010134A2D4A72769C515FB88ED /* SunshineBrowser.modulemap */,
+				267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */,
+				A316095DF5F1EBD68D0B605E51B193D8 /* SunshineBrowser-dummy.m */,
+				03DA2089B1A5066508DB1AF96E47EBC2 /* SunshineBrowser-prefix.pch */,
+				F34132F2F86A9ADBE0460CFFA711174B /* SunshineBrowser-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SunshineBrowser";
+			sourceTree = "<group>";
+		};
+		426E84C6C68C639607ACC4D0378555FE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FCB5578CC60A9842195B43D7E19DC386 /* SunshineBrowser */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5C4C22B5615909A3F33D9AFA0E5CDDB0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6FC8C94936A345184F8733571CE0F5FD /* BaseGestureAnimationController.swift */,
+				230EDD2E1A153F9E478FE7D3E8181798 /* BrowserConfig.swift */,
+				51B78E939FD3C3BA6E341CE0F053D8C4 /* BrowserPreviewModel.swift */,
+				4FFD370E4EF3EDD2700EE710D70285DB /* PlayerView.h */,
+				AED903160B8EAA5DB6CF5746B716A5A7 /* PlayerView.m */,
+				5B7B6AC47DEC7465C5D787F33A161A0C /* PreviewContentType.swift */,
+				6E76BAD00E4827EBE2D4D71F00058BC6 /* SunshineBrowser-Bridging-Header.h */,
+			);
+			name = Base;
+			path = SunshineBrowser/Classes/Base;
+			sourceTree = "<group>";
+		};
+		65B766B6BBFE9E31BCE7A47B2799D2F1 /* Loader */ = {
+			isa = PBXGroup;
+			children = (
+				86D7EC945540710F6EE80A45A5643059 /*  ProgressIndicatorType.swift */,
+				5CC3144DA2B0B8D8D3297CE50FBA282B /* DefaultImageLoader.swift */,
+				3B7F7289A08345EE9C9C59BF8B6EF84A /* DefaultLoadingIndicator.swift */,
+				14E4A11623F0CCC0F7C13EADBD4D63AF /* DefaultVideoLoader.swift */,
+				81B853C5BDAF393F2C490361C3C8E163 /* LoaderType.swift */,
+			);
+			name = Loader;
+			path = SunshineBrowser/Classes/Loader;
+			sourceTree = "<group>";
+		};
+		698DC9FF6AE940D61D3DC2DBACE4EA70 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CA1D2CA1A5BC420602C3B5B837EA83B6 /* Bundle+Extension.swift */,
+				9B605D7F4741E1C2F5EB4E52EA71EE6C /* UIImage+Current.swift */,
+			);
+			name = Extension;
+			path = SunshineBrowser/Classes/Extension;
+			sourceTree = "<group>";
+		};
+		7CFD2867080267C8708A01B7E520EA5A /* Pods-SunshineBrowser_Example */ = {
+			isa = PBXGroup;
+			children = (
+				60A973C9567E2C94AA5477AAAB6F205A /* Info.plist */,
+				FCE255941D946E5C39753B679DD89922 /* Pods-SunshineBrowser_Example.modulemap */,
+				7847E700AA09200E0A5E86DCC9348141 /* Pods-SunshineBrowser_Example-acknowledgements.markdown */,
+				CA1E2BA04B93AAD6934592BAF4DE23FF /* Pods-SunshineBrowser_Example-acknowledgements.plist */,
+				FE4B3FC2C81928A88F32DD29C8AD7170 /* Pods-SunshineBrowser_Example-dummy.m */,
+				28B206CAD681A7CFDB736AD9C6A1C792 /* Pods-SunshineBrowser_Example-frameworks.sh */,
+				72FC85895E6559E0C640EA660D5E14CE /* Pods-SunshineBrowser_Example-resources.sh */,
+				4540A8456711DDD8308C49929AD5E926 /* Pods-SunshineBrowser_Example-umbrella.h */,
+				445764ABC9D9EC5F0A67139809AAE7CD /* Pods-SunshineBrowser_Example.debug.xcconfig */,
+				FA185D93A44F026851F90A79D87BCB45 /* Pods-SunshineBrowser_Example.release.xcconfig */,
+			);
+			name = "Pods-SunshineBrowser_Example";
+			path = "Target Support Files/Pods-SunshineBrowser_Example";
+			sourceTree = "<group>";
+		};
+		7D9BBB56729E706FD72C826EE55B4BE5 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				45AD9EEAF28764842DABD350DB497DB7 /* BrowserCustomPresentationController.swift */,
+				D47539327A6A0675A43A278E6EE01806 /* BrowserTransitionAnimator.swift */,
+				15700F90E74FF1E2F561423E28B372E3 /* BrowserTransitionDelegate.swift */,
+			);
+			name = Transition;
+			path = SunshineBrowser/Classes/Transition;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				426E84C6C68C639607ACC4D0378555FE /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				BF12B0338AAE76FE148EDFAF4B203548 /* Products */,
+				BCBCD5CE5A06C8764437144DF14259E3 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8CF451D8F9096110232CBFB0BFC155D7 /* Pods-SunshineBrowser_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E801D6DF37068CF600132EF26D241C6F /* Info.plist */,
+				FE47D8EBED83FBE89810ADA40A68DB1D /* Pods-SunshineBrowser_Tests.modulemap */,
+				FEA0DDB57D023FD8F4FAADF171CEBD75 /* Pods-SunshineBrowser_Tests-acknowledgements.markdown */,
+				F65A8A966D1744D3633020124800071F /* Pods-SunshineBrowser_Tests-acknowledgements.plist */,
+				C19C81645AB3C0112580449AC3BB40C9 /* Pods-SunshineBrowser_Tests-dummy.m */,
+				535DA59D1A8445E1DEC97C7FDB3BDEE0 /* Pods-SunshineBrowser_Tests-frameworks.sh */,
+				0A540BDF0195FB17D22AA3EBE43C7832 /* Pods-SunshineBrowser_Tests-resources.sh */,
+				09A76E7344A83F656FB3F71166C5AEFB /* Pods-SunshineBrowser_Tests-umbrella.h */,
+				A23383D17F1D8FEEAAE24424F77A15A1 /* Pods-SunshineBrowser_Tests.debug.xcconfig */,
+				3763D2AE7716F6D118010C7E9312DC4C /* Pods-SunshineBrowser_Tests.release.xcconfig */,
+			);
+			name = "Pods-SunshineBrowser_Tests";
+			path = "Target Support Files/Pods-SunshineBrowser_Tests";
+			sourceTree = "<group>";
+		};
+		918ED8E10ED9A6D28B963E4231FCCB9F /* SinglePhotoPreview */ = {
+			isa = PBXGroup;
+			children = (
+				2363246B52056E194932F965B9DAAAF3 /* BrowserPhotoPreviewController.swift */,
+				3A4642D823399BC1E3041212EC3312EF /* SinglePhotoPreviewCell.swift */,
+			);
+			name = SinglePhotoPreview;
+			path = SunshineBrowser/Classes/SinglePhotoPreview;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCBCD5CE5A06C8764437144DF14259E3 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CFD2867080267C8708A01B7E520EA5A /* Pods-SunshineBrowser_Example */,
+				8CF451D8F9096110232CBFB0BFC155D7 /* Pods-SunshineBrowser_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BF12B0338AAE76FE148EDFAF4B203548 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D6E9FE4AF9560609A7BA54D1367AF36 /* Pods_SunshineBrowser_Example.framework */,
+				51AAFBC4FBFE5BA923E4E75B45449182 /* Pods_SunshineBrowser_Tests.framework */,
+				9FA75EDC42BC5B47AD15DCDDB3CDB5AF /* SunshineBrowser.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C20D9E27F02987BCA39B731CE0202F58 /* MixBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				635F1908868ADA608DB631EE1CB88829 /* BrowserMixPreviewController.swift */,
+				20CB546C407C49782AC6D284A50EF294 /* PhotoPreviewCell.swift */,
+				C332FD29AD9768029AC29927BB9F2F48 /* VideoPreviewCell.swift */,
+			);
+			name = MixBrowser;
+			path = SunshineBrowser/Classes/MixBrowser;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FCB5578CC60A9842195B43D7E19DC386 /* SunshineBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				5C4C22B5615909A3F33D9AFA0E5CDDB0 /* Base */,
+				698DC9FF6AE940D61D3DC2DBACE4EA70 /* Extension */,
+				65B766B6BBFE9E31BCE7A47B2799D2F1 /* Loader */,
+				C20D9E27F02987BCA39B731CE0202F58 /* MixBrowser */,
+				033C63A13D343906214458E46DDF85BA /* Resources */,
+				918ED8E10ED9A6D28B963E4231FCCB9F /* SinglePhotoPreview */,
+				1B37AA9B1114DBFDF732157FE0B5D574 /* Support Files */,
+				7D9BBB56729E706FD72C826EE55B4BE5 /* Transition */,
+			);
+			name = SunshineBrowser;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4A9F339468E40888066668638A3729BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23200F896901546B66181D359339F504 /* PlayerView.h in Headers */,
+				B86BD4798E749AA7AE36183114486A54 /* SunshineBrowser-Bridging-Header.h in Headers */,
+				E7DF323D285E956338E48C209AA7F56A /* SunshineBrowser-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6ADDB525BC6526AD52DC2CE0491AA121 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D8898454BDADA345957A694D05CD98B /* Pods-SunshineBrowser_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C70B40E3B20E1042C5439219968C1679 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CC47A0E2C79D3FE36961D388AFE0ACD /* Pods-SunshineBrowser_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0A4EF53036592EBD03AE8D108CA3E6E1 /* Pods-SunshineBrowser_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F680DF1B6E1ADD64619D83C947593EBB /* Build configuration list for PBXNativeTarget "Pods-SunshineBrowser_Tests" */;
+			buildPhases = (
+				223F03923F3C95123EFE55FF28FD7609 /* Sources */,
+				D676AFE2377B4D41E6B9F275BAB6D120 /* Frameworks */,
+				6ADDB525BC6526AD52DC2CE0491AA121 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SunshineBrowser_Tests";
+			productName = "Pods-SunshineBrowser_Tests";
+			productReference = 51AAFBC4FBFE5BA923E4E75B45449182 /* Pods_SunshineBrowser_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6B611D5CD2B8CCD537313C3F9A7F8410 /* SunshineBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 833C4129FF541609C9A622C3D937FF36 /* Build configuration list for PBXNativeTarget "SunshineBrowser" */;
+			buildPhases = (
+				7E12B6FEC4F47F35F5DCB72660587875 /* Sources */,
+				BF89EE2B8F15E6724DECB651A1CE1313 /* Frameworks */,
+				4A9F339468E40888066668638A3729BA /* Headers */,
+				613BB0E8C54DDEBA3DAD669983575396 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SunshineBrowser;
+			productName = SunshineBrowser;
+			productReference = 9FA75EDC42BC5B47AD15DCDDB3CDB5AF /* SunshineBrowser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F06D45037B62EE237F0B0B1699672AC3 /* Pods-SunshineBrowser_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E9D0B10C4091135A31C49ADB2EC9F87 /* Build configuration list for PBXNativeTarget "Pods-SunshineBrowser_Example" */;
+			buildPhases = (
+				E3F40F06C218650E5F81C8F1A193BB2B /* Sources */,
+				91645B4F18B4DE8C4B9D33A1EB08FD1E /* Frameworks */,
+				C70B40E3B20E1042C5439219968C1679 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A22F49FC63EE048D01A820349E9C9CAC /* PBXTargetDependency */,
+			);
+			name = "Pods-SunshineBrowser_Example";
+			productName = "Pods-SunshineBrowser_Example";
+			productReference = 7D6E9FE4AF9560609A7BA54D1367AF36 /* Pods_SunshineBrowser_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = BF12B0338AAE76FE148EDFAF4B203548 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F06D45037B62EE237F0B0B1699672AC3 /* Pods-SunshineBrowser_Example */,
+				0A4EF53036592EBD03AE8D108CA3E6E1 /* Pods-SunshineBrowser_Tests */,
+				6B611D5CD2B8CCD537313C3F9A7F8410 /* SunshineBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		613BB0E8C54DDEBA3DAD669983575396 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4019C38C5BE24E600C12532EACBF55D1 /* Browser.storyboard in Resources */,
+				10DEB548DB4C6CFC352B0FFFE0D9FA3D /* SunshineBrowser.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		223F03923F3C95123EFE55FF28FD7609 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA827DB40ABC8F6A3429B7135D6F89A /* Pods-SunshineBrowser_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E12B6FEC4F47F35F5DCB72660587875 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07AF31E8125E892A2E1D5E1926956220 /*  ProgressIndicatorType.swift in Sources */,
+				13462E48C4F8032E098D49BA2FC60DF3 /* BaseGestureAnimationController.swift in Sources */,
+				A1683338957533763ECDBDFBD65CB4CF /* BrowserConfig.swift in Sources */,
+				E901F43CE3327A31FAF0623E170C1756 /* BrowserCustomPresentationController.swift in Sources */,
+				4CF7E966A766018A83C2D467124C06F3 /* BrowserMixPreviewController.swift in Sources */,
+				2FDAB6DEAC5F747DBED8F240297B3930 /* BrowserPhotoPreviewController.swift in Sources */,
+				B67F76A25ED9D64AADB1C1664F0DA49D /* BrowserPreviewModel.swift in Sources */,
+				2C78F2CD6A69446B52E8A0A079FA936B /* BrowserTransitionAnimator.swift in Sources */,
+				AA695370F67ADD9DCCA73E8812F10AF5 /* BrowserTransitionDelegate.swift in Sources */,
+				FD1CDB603E275252D476ED207CE933DF /* Bundle+Extension.swift in Sources */,
+				3C2E33CD5D2AEE338849A32D1FB6BA96 /* DefaultImageLoader.swift in Sources */,
+				25B9842430D88A8B2E3603582A4CC8F4 /* DefaultLoadingIndicator.swift in Sources */,
+				8586FA8528E7FF9EA56EADCF7C3FC1DB /* DefaultVideoLoader.swift in Sources */,
+				B9CBE0B39D14CAEDB546FF052C47154F /* LoaderType.swift in Sources */,
+				CCB5B35F4661BCB6D4241F9EBB091066 /* PhotoPreviewCell.swift in Sources */,
+				0B0121712619912F3A0ACBAC2C43F880 /* PlayerView.m in Sources */,
+				58680BCAD227855E46C7E4462161F313 /* PreviewContentType.swift in Sources */,
+				47B38DFB0B9FD868F30CA732E8004AF0 /* SinglePhotoPreviewCell.swift in Sources */,
+				E5FBEA6F71936DED04861B08C4DFC21C /* SunshineBrowser-dummy.m in Sources */,
+				3CF269F9C5C34412D8120E3C4F6909EB /* UIImage+Current.swift in Sources */,
+				7B24AB7973F1D982490D557AD6CB9742 /* VideoPreviewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3F40F06C218650E5F81C8F1A193BB2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98099DE28F3A29297264ECC02F989039 /* Pods-SunshineBrowser_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A22F49FC63EE048D01A820349E9C9CAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SunshineBrowser;
+			target = 6B611D5CD2B8CCD537313C3F9A7F8410 /* SunshineBrowser */;
+			targetProxy = 17860E123D8239C7125E68552179B774 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07DF983E0964D77BAB366992D1FB7C92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 445764ABC9D9EC5F0A67139809AAE7CD /* Pods-SunshineBrowser_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SunshineBrowser_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunshineBrowser_Example/Pods-SunshineBrowser_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SunshineBrowser_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		16CA65F54808F26E891AEA9552EB677C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SunshineBrowser/SunshineBrowser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SunshineBrowser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SunshineBrowser/SunshineBrowser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SunshineBrowser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27548D7027145E5541163EECDE4A5414 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SunshineBrowser/SunshineBrowser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SunshineBrowser/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SunshineBrowser/SunshineBrowser.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SunshineBrowser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4957B86C67C4D65BF643E18B93613915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3763D2AE7716F6D118010C7E9312DC4C /* Pods-SunshineBrowser_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SunshineBrowser_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunshineBrowser_Tests/Pods-SunshineBrowser_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SunshineBrowser_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		98558D71709749ADDA7389B9451146CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A23383D17F1D8FEEAAE24424F77A15A1 /* Pods-SunshineBrowser_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SunshineBrowser_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunshineBrowser_Tests/Pods-SunshineBrowser_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SunshineBrowser_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED8EF0D372F2C5F6530CA699F473DBF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA185D93A44F026851F90A79D87BCB45 /* Pods-SunshineBrowser_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SunshineBrowser_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SunshineBrowser_Example/Pods-SunshineBrowser_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SunshineBrowser_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EED546DBB23FC32035C9BDC4E22B30BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED546DBB23FC32035C9BDC4E22B30BD /* Debug */,
+				157AF0CD5E5AB2A2E74D3B8ECD865185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E9D0B10C4091135A31C49ADB2EC9F87 /* Build configuration list for PBXNativeTarget "Pods-SunshineBrowser_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07DF983E0964D77BAB366992D1FB7C92 /* Debug */,
+				ED8EF0D372F2C5F6530CA699F473DBF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		833C4129FF541609C9A622C3D937FF36 /* Build configuration list for PBXNativeTarget "SunshineBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27548D7027145E5541163EECDE4A5414 /* Debug */,
+				16CA65F54808F26E891AEA9552EB677C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F680DF1B6E1ADD64619D83C947593EBB /* Build configuration list for PBXNativeTarget "Pods-SunshineBrowser_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98558D71709749ADDA7389B9451146CB /* Debug */,
+				4957B86C67C4D65BF643E18B93613915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

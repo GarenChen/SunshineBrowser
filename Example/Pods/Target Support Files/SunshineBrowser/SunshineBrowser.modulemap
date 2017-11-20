@@ -1,0 +1,6 @@
+framework module SunshineBrowser {
+  umbrella header "SunshineBrowser-umbrella.h"
+
+  export *
+  module * { export * }
+}

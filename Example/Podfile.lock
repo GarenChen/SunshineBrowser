@@ -1,0 +1,16 @@
+PODS:
+  - SunshineBrowser (0.1.0)
+
+DEPENDENCIES:
+  - SunshineBrowser (from `../`)
+
+EXTERNAL SOURCES:
+  SunshineBrowser:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SunshineBrowser: b4fb4d121c603b07ebf3497193daedc92f56c29a
+
+PODFILE CHECKSUM: 017729ffd6a1b2f6cdfbbbf6ea4c869e5fe3602e
+
+COCOAPODS: 1.3.0.rc.1

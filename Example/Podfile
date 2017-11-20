@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SunshineBrowser_Example' do
+  pod 'SunshineBrowser', :path => '../'
+
+  target 'SunshineBrowser_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
