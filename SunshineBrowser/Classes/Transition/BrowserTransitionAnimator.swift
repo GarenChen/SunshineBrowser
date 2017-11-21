@@ -66,7 +66,7 @@ class BrowserTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
 			toView.frame = self.destinationFrame ?? containerBounds
             toView.alpha = 0
 
-            animationHolderImageview.image = placeholderImage ?? UIImage.named("placeholderImage.png")
+            animationHolderImageview.image = placeholderImage ?? UIImage.from(UIColor.black)
             animationHolderImageview.frame = originFrame
             containerView.addSubview(animationHolderImageview)
             
@@ -81,7 +81,7 @@ class BrowserTransitionAnimator: NSObject, UIViewControllerAnimatedTransitioning
 		} else {
             fromView.alpha = 0
             
-            animationHolderImageview.image = placeholderImage ?? UIImage.named("placeholderImage.png")
+            animationHolderImageview.image = placeholderImage ?? UIImage.from(UIColor.black)
             animationHolderImageview.frame = destinationFrame ?? transitionContext.initialFrame(for: fromViewController)
             containerView.addSubview(animationHolderImageview)
             

@@ -21,19 +21,14 @@ public class BrowserMixPreviewController: BaseGestureAnimationController, UIColl
     }
 
     override var animationPlaceholderImage: UIImage? {
-        switch models[currentItemIndex] {
-        case .image(let image):
-            return image
-        case let .videoURL(_, image), let .imageURLString(_, image), let .videoURLString(_, image):
-            return image
-        }
+        return (collectionView.cellForItem(at: IndexPath(item: currentItemIndex, section: 0)) as? PreviewContentType)?.animationPlaceholderImage
     }
     
     override var handlingView: UIView? {
         return (collectionView.cellForItem(at: IndexPath(item: currentItemIndex, section: 0)) as? PreviewContentType)?.handlingView
     }
 
-	public class func show(in controller: UIViewController, models: [BrowserPreviewModel], selectedIndex: Int = 0, originalFrame: CGRect?, config: BrowserConfig = BrowserConfig()) -> BrowserMixPreviewController {
+	public class func show(in controller: UIViewController, models: [BrowserPreviewModel], selectedIndex: Int = 0, originalFrame: CGRect?, animationPlaceholderImage: UIImage?, config: BrowserConfig = BrowserConfig()) -> BrowserMixPreviewController {
 		
 		BrowserConfig.shared.imageLoader = config.imageLoader
 		BrowserConfig.shared.videoLoader = config.videoLoader
@@ -41,22 +36,17 @@ public class BrowserMixPreviewController: BaseGestureAnimationController, UIColl
 		BrowserConfig.shared.videoProgressIndicator = config.videoProgressIndicator
 		
         let storyboard = UIStoryboard(name: "Browser", bundle: Bundle.current)
-        let controller = storyboard.instantiateViewController(withIdentifier: "BrowserMixPreviewController") as! BrowserMixPreviewController
+        let previewController = storyboard.instantiateViewController(withIdentifier: "BrowserMixPreviewController") as! BrowserMixPreviewController
         
-        controller.modalPresentationStyle = .custom
-        
-        var placeholderImage: UIImage? {
-            switch models[selectedIndex] {
-            case .image(let image):
-                return image
-            case let .videoURL(_, image), let .imageURLString(_, image), let .videoURLString(_, image):
-                return image
-            }
-        }
-        controller.customTransitionDelegate = BrowserTransitionDelegate(placeholderImage: placeholderImage, originFrame: originalFrame, destinationFrame: BrowserMixPreviewController.controllerViewFrame)
-        controller.models = models
-        controller.currentItemIndex = selectedIndex
-        return controller
+        previewController.modalPresentationStyle = .custom
+
+        previewController.customTransitionDelegate = BrowserTransitionDelegate(placeholderImage: animationPlaceholderImage, originFrame: originalFrame, destinationFrame: BrowserMixPreviewController.controllerViewFrame)
+        previewController.models = models
+        previewController.currentItemIndex = selectedIndex
+		
+		controller.present(previewController, animated: true, completion: nil)
+		
+        return previewController
     }
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -87,7 +77,8 @@ public class BrowserMixPreviewController: BaseGestureAnimationController, UIColl
 		super.viewWillAppear(animated)
 		if currentItemIndex < models.count {
 			view.layoutIfNeeded()
-			collectionView.scrollToItem(at: IndexPath(item: currentItemIndex, section: 0), at: .centeredHorizontally, animated: false)
+			let collectionViewWidth = BrowserMixPreviewController.controllerViewFrame.size.width + 20
+			collectionView.setContentOffset(CGPoint.init(x: collectionViewWidth * CGFloat(currentItemIndex), y: 0), animated: false)
 		}
 	}
     

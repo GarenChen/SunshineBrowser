@@ -71,13 +71,16 @@ public class BaseGestureAnimationController: UIViewController {
             view.addSubview(animationImageView)
             view.bringSubview(toFront: animationImageView)
             view.setNeedsLayout()
-            
+		
         case .changed:
             if translation.y > 0 {
                 let panRetioY = translation.y / view.bounds.size.height
                 let dx = handlingViewFrame.size.width * (panRetioY < 0.75 ? panRetioY : 0.75) / 2
                 let dy = handlingViewFrame.size.height * (panRetioY < 0.75 ? panRetioY : 0.75) / 2
                 animationImageView.bounds = handlingViewFrame.insetBy(dx: dx, dy: dy)
+				
+				(self.presentationController as? BrowserCustomPresentationController)?.dimmingView.alpha = (1 - translation.y / (view.bounds.size.height / 2))
+				
             }
             animationImageView.center = CGPoint(x: handlingViewCenter.x + translation.x,
                                                 y: handlingViewCenter.y + translation.y)

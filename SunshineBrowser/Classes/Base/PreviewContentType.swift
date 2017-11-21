@@ -11,6 +11,6 @@ import Foundation
 protocol PreviewContentType: class {
     
     var handlingView: UIView? { get }
-
+	var animationPlaceholderImage: UIImage? { get }
     func recoverSubview()
 }

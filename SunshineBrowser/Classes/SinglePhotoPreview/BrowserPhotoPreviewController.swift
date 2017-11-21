@@ -21,7 +21,7 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
     static var controllerViewFrame: CGRect {
         return UIScreen.main.bounds.insetBy(dx: 15, dy: 15)
     }
-    
+	
     override var animationPlaceholderImage: UIImage? {
         return images[selectedIndex]
     }
@@ -38,7 +38,7 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
         } else {
             automaticallyAdjustsScrollViewInsets = false
         }
-        
+        (self.presentationController as? BrowserCustomPresentationController)?.dimmingView.backgroundColor = UIColor(white: 0, alpha: 0.5)
 		pageControl.numberOfPages = images.count
     }
 	
@@ -47,7 +47,8 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
 		if selectedIndex < images.count {
 			view.layoutIfNeeded()
 			pageControl.currentPage = selectedIndex
-			collectionView.scrollToItem(at: IndexPath(item: selectedIndex, section: 0), at: .centeredHorizontally, animated: false)
+			let collectionViewWidth = BrowserPhotoPreviewController.controllerViewFrame.size.width + 20
+			collectionView.setContentOffset(CGPoint.init(x: collectionViewWidth * CGFloat(selectedIndex), y: 0), animated: false)
 		}
 	}
 
@@ -61,14 +62,17 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
     
     public class func show(in controller: UIViewController, images: [UIImage], selectedIndex: Int = 0, originalFrame: CGRect?) -> BrowserPhotoPreviewController {
 		let storyboard = UIStoryboard(name: "Browser", bundle: Bundle.current)
-		let controller = storyboard.instantiateViewController(withIdentifier: "BrowserPhotoPreviewController") as! BrowserPhotoPreviewController
+		let previewController = storyboard.instantiateViewController(withIdentifier: "BrowserPhotoPreviewController") as! BrowserPhotoPreviewController
 		
-		controller.modalPresentationStyle = .custom
-		controller.customTransitionDelegate = BrowserTransitionDelegate(placeholderImage: images[selectedIndex], originFrame: originalFrame, destinationFrame: BrowserPhotoPreviewController.controllerViewFrame)
+		previewController.modalPresentationStyle = .custom
+		previewController.customTransitionDelegate = BrowserTransitionDelegate(placeholderImage: images[selectedIndex], originFrame: originalFrame, destinationFrame: BrowserPhotoPreviewController.controllerViewFrame)
 		
-		controller.images = images
-		controller.selectedIndex = selectedIndex
-		return controller
+		previewController.images = images
+		previewController.selectedIndex = selectedIndex
+		
+		controller.present(previewController, animated: true, completion: nil)
+		
+		return previewController
 	}
 
     public override func didReceiveMemoryWarning() {

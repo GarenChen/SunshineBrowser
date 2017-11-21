@@ -7,39 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07AF31E8125E892A2E1D5E1926956220 /*  ProgressIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D7EC945540710F6EE80A45A5643059 /*  ProgressIndicatorType.swift */; };
-		0B0121712619912F3A0ACBAC2C43F880 /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AED903160B8EAA5DB6CF5746B716A5A7 /* PlayerView.m */; };
+		027CEBC85E7D35BAD206E4E5C67FE041 /* VideoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91243E3AA65893D633C3AF59B99D32CD /* VideoPreviewCell.swift */; };
 		0CC47A0E2C79D3FE36961D388AFE0ACD /* Pods-SunshineBrowser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4540A8456711DDD8308C49929AD5E926 /* Pods-SunshineBrowser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		10DEB548DB4C6CFC352B0FFFE0D9FA3D /* SunshineBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0932C30B9EF1F16A791CD71749F9BBB0 /* SunshineBrowser.bundle */; };
-		13462E48C4F8032E098D49BA2FC60DF3 /* BaseGestureAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FC8C94936A345184F8733571CE0F5FD /* BaseGestureAnimationController.swift */; };
-		23200F896901546B66181D359339F504 /* PlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FFD370E4EF3EDD2700EE710D70285DB /* PlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25B9842430D88A8B2E3603582A4CC8F4 /* DefaultLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7F7289A08345EE9C9C59BF8B6EF84A /* DefaultLoadingIndicator.swift */; };
-		2C78F2CD6A69446B52E8A0A079FA936B /* BrowserTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47539327A6A0675A43A278E6EE01806 /* BrowserTransitionAnimator.swift */; };
+		10DEB548DB4C6CFC352B0FFFE0D9FA3D /* SunshineBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4F7A17F337A8BB807C69011A33FE112 /* SunshineBrowser.bundle */; };
+		11A621792D1D798C99F378CD01B8D327 /* UIView+CaptureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D5B3597DD498BCC2EBF2F08E37799C /* UIView+CaptureScreen.swift */; };
+		15AB59CC3A34F226272A84EC51118A3D /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0687BEC19902F06AB50858F090E9 /* PlayerView.m */; };
+		19392C0A50056E415A7F64CB664B20C5 /* LoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C1506955A24CF7B3681D1F07AE5DD /* LoaderType.swift */; };
+		23200F896901546B66181D359339F504 /* PlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DCE4DE01F192CC29320A57C922FBA2 /* PlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D8898454BDADA345957A694D05CD98B /* Pods-SunshineBrowser_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A76E7344A83F656FB3F71166C5AEFB /* Pods-SunshineBrowser_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2FDAB6DEAC5F747DBED8F240297B3930 /* BrowserPhotoPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2363246B52056E194932F965B9DAAAF3 /* BrowserPhotoPreviewController.swift */; };
-		3C2E33CD5D2AEE338849A32D1FB6BA96 /* DefaultImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC3144DA2B0B8D8D3297CE50FBA282B /* DefaultImageLoader.swift */; };
-		3CF269F9C5C34412D8120E3C4F6909EB /* UIImage+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B605D7F4741E1C2F5EB4E52EA71EE6C /* UIImage+Current.swift */; };
-		4019C38C5BE24E600C12532EACBF55D1 /* Browser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6949B9E69601700E6326EE7CD6BBA86C /* Browser.storyboard */; };
-		47B38DFB0B9FD868F30CA732E8004AF0 /* SinglePhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4642D823399BC1E3041212EC3312EF /* SinglePhotoPreviewCell.swift */; };
-		4CF7E966A766018A83C2D467124C06F3 /* BrowserMixPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635F1908868ADA608DB631EE1CB88829 /* BrowserMixPreviewController.swift */; };
-		58680BCAD227855E46C7E4462161F313 /* PreviewContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7B6AC47DEC7465C5D787F33A161A0C /* PreviewContentType.swift */; };
+		3E737F0AA1D3B2077A590F063A303752 /* UIImage+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B367EAAC10FB5A7A2B28456643104B1 /* UIImage+Current.swift */; };
+		4019C38C5BE24E600C12532EACBF55D1 /* Browser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8942E2463F94C06BF2D1E7F8916E9071 /* Browser.storyboard */; };
+		4108684E24B593D73D7A8BF464DB352E /* BaseGestureAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6688E43142F52AA39DDC0CA306F05A /* BaseGestureAnimationController.swift */; };
+		487DF82C64DE60BCB625AC18C46D6B75 /* BrowserConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D043537A28FCB9E7AF0D9483A14524D0 /* BrowserConfig.swift */; };
+		5A04E840308B61656D4D493E72EF6352 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363F4E3E8FF4E51B04FE799379435B52 /* Bundle+Extension.swift */; };
+		5B225699426E9EAC07D032806A6A07FC /* DefaultLoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9D7810D65D6DEA7F69DF13CEFD2EC63 /* DefaultLoadingIndicator.swift */; };
 		64FCE5BC2515579091A8BF89ADF22B92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		7B24AB7973F1D982490D557AD6CB9742 /* VideoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C332FD29AD9768029AC29927BB9F2F48 /* VideoPreviewCell.swift */; };
+		6DD329D30C2E5B066A6C087C3DF5C4F8 /* BrowserPhotoPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D69F225E97F7C09014E8618A2A8F408 /* BrowserPhotoPreviewController.swift */; };
+		7395753E337CA521389B2F575044849A /* BrowserTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC335227B7D6E82C8A8A97AC5ADD489E /* BrowserTransitionAnimator.swift */; };
+		79529F7E9E5B84ECC6A0833CF9EDA587 /* PreviewContentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A194B85D0DF241F1F880DF373D56FD5 /* PreviewContentType.swift */; };
+		79F6362904E7807DE4720191CBA893A9 /* PhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5D1F959A5FA244A08F785FF963821A /* PhotoPreviewCell.swift */; };
+		7A3F46D8A3B793F33DD0D538ED153FAF /* SinglePhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616CA07282E0655264BB727F1C56C64B /* SinglePhotoPreviewCell.swift */; };
+		7B82A022248C732498AD5BAB7BC54439 /* SunshineBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4876E3962A09A2982BC083E6FBD9247B /* SunshineBrowser-dummy.m */; };
 		83CB32774B22079685E2EDE225010BAB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		8586FA8528E7FF9EA56EADCF7C3FC1DB /* DefaultVideoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E4A11623F0CCC0F7C13EADBD4D63AF /* DefaultVideoLoader.swift */; };
 		85C9A88A4E9635D20679FABCB36CE584 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		9346E9AD6DB2E95F57F6C1CC1344DC0E /* DefaultImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02D36D314DA1F71C689CBECBD699426B /* DefaultImageLoader.swift */; };
 		98099DE28F3A29297264ECC02F989039 /* Pods-SunshineBrowser_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FE4B3FC2C81928A88F32DD29C8AD7170 /* Pods-SunshineBrowser_Example-dummy.m */; };
-		A1683338957533763ECDBDFBD65CB4CF /* BrowserConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230EDD2E1A153F9E478FE7D3E8181798 /* BrowserConfig.swift */; };
-		AA695370F67ADD9DCCA73E8812F10AF5 /* BrowserTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15700F90E74FF1E2F561423E28B372E3 /* BrowserTransitionDelegate.swift */; };
-		B67F76A25ED9D64AADB1C1664F0DA49D /* BrowserPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B78E939FD3C3BA6E341CE0F053D8C4 /* BrowserPreviewModel.swift */; };
-		B86BD4798E749AA7AE36183114486A54 /* SunshineBrowser-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E76BAD00E4827EBE2D4D71F00058BC6 /* SunshineBrowser-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9CBE0B39D14CAEDB546FF052C47154F /* LoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B853C5BDAF393F2C490361C3C8E163 /* LoaderType.swift */; };
-		CCB5B35F4661BCB6D4241F9EBB091066 /* PhotoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20CB546C407C49782AC6D284A50EF294 /* PhotoPreviewCell.swift */; };
+		B86BD4798E749AA7AE36183114486A54 /* SunshineBrowser-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C8805D8EF5DFC4012A18BEBD326AFDF /* SunshineBrowser-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF9B017E4A768B412C7A4DC5F130DFB9 /* DefaultVideoLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03D1E129F497A16A4EF27982261C7E /* DefaultVideoLoader.swift */; };
+		C4A73E31739EB0F9B432B62CDD0B8521 /* BrowserPreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38C9D9A83008AD8A5F16B4FFE77AF3 /* BrowserPreviewModel.swift */; };
+		D0F7483837F93D5173DF75AEA9E844CE /* BrowserTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB24DA02DC9E1D017ED79C984B0EF27 /* BrowserTransitionDelegate.swift */; };
+		D22415A1F53278DE5544F894B27D7D2D /*  ProgressIndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1584041BE3CC9FF029C8E4FD6AD6D4 /*  ProgressIndicatorType.swift */; };
+		D3AED8E5DE579F7B90EE1AFC99EFD757 /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5647528AEFDA7EE4EF8898E3E93B558 /* UIImage+Color.swift */; };
+		D8AAFF7E5EDD804F4C4FDBA0FA9DD073 /* BrowserCustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A70DAF3B133ED12F5A2CB55A097D500 /* BrowserCustomPresentationController.swift */; };
 		DDA827DB40ABC8F6A3429B7135D6F89A /* Pods-SunshineBrowser_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C19C81645AB3C0112580449AC3BB40C9 /* Pods-SunshineBrowser_Tests-dummy.m */; };
-		E5FBEA6F71936DED04861B08C4DFC21C /* SunshineBrowser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A316095DF5F1EBD68D0B605E51B193D8 /* SunshineBrowser-dummy.m */; };
-		E7DF323D285E956338E48C209AA7F56A /* SunshineBrowser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F34132F2F86A9ADBE0460CFFA711174B /* SunshineBrowser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E901F43CE3327A31FAF0623E170C1756 /* BrowserCustomPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AD9EEAF28764842DABD350DB497DB7 /* BrowserCustomPresentationController.swift */; };
-		FD1CDB603E275252D476ED207CE933DF /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1D2CA1A5BC420602C3B5B837EA83B6 /* Bundle+Extension.swift */; };
+		E7DF323D285E956338E48C209AA7F56A /* SunshineBrowser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DFAA0C3A12A42A4E21808CF6312D055 /* SunshineBrowser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E86620BED4BD4752DBF61D57A8A39BBD /* BrowserMixPreviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BBD2E0D880A3F74927A25A81989FAA /* BrowserMixPreviewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,57 +55,59 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		03DA2089B1A5066508DB1AF96E47EBC2 /* SunshineBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-prefix.pch"; sourceTree = "<group>"; };
-		06E64E010134A2D4A72769C515FB88ED /* SunshineBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineBrowser.modulemap; sourceTree = "<group>"; };
-		0932C30B9EF1F16A791CD71749F9BBB0 /* SunshineBrowser.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SunshineBrowser.bundle; path = SunshineBrowser/Assets/SunshineBrowser.bundle; sourceTree = "<group>"; };
+		02D36D314DA1F71C689CBECBD699426B /* DefaultImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultImageLoader.swift; sourceTree = "<group>"; };
 		09A76E7344A83F656FB3F71166C5AEFB /* Pods-SunshineBrowser_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineBrowser_Tests-umbrella.h"; sourceTree = "<group>"; };
 		0A540BDF0195FB17D22AA3EBE43C7832 /* Pods-SunshineBrowser_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Tests-resources.sh"; sourceTree = "<group>"; };
-		14E4A11623F0CCC0F7C13EADBD4D63AF /* DefaultVideoLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultVideoLoader.swift; sourceTree = "<group>"; };
-		15700F90E74FF1E2F561423E28B372E3 /* BrowserTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionDelegate.swift; sourceTree = "<group>"; };
-		20CB546C407C49782AC6D284A50EF294 /* PhotoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCell.swift; sourceTree = "<group>"; };
-		230EDD2E1A153F9E478FE7D3E8181798 /* BrowserConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserConfig.swift; sourceTree = "<group>"; };
-		2363246B52056E194932F965B9DAAAF3 /* BrowserPhotoPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPhotoPreviewController.swift; sourceTree = "<group>"; };
-		267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineBrowser.xcconfig; sourceTree = "<group>"; };
+		0C8805D8EF5DFC4012A18BEBD326AFDF /* SunshineBrowser-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
+		0F03D1E129F497A16A4EF27982261C7E /* DefaultVideoLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultVideoLoader.swift; sourceTree = "<group>"; };
+		13BBD2E0D880A3F74927A25A81989FAA /* BrowserMixPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserMixPreviewController.swift; sourceTree = "<group>"; };
+		1B6688E43142F52AA39DDC0CA306F05A /* BaseGestureAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseGestureAnimationController.swift; sourceTree = "<group>"; };
 		28B206CAD681A7CFDB736AD9C6A1C792 /* Pods-SunshineBrowser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Example-frameworks.sh"; sourceTree = "<group>"; };
+		363F4E3E8FF4E51B04FE799379435B52 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		3763D2AE7716F6D118010C7E9312DC4C /* Pods-SunshineBrowser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		3A4642D823399BC1E3041212EC3312EF /* SinglePhotoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePhotoPreviewCell.swift; sourceTree = "<group>"; };
-		3B7F7289A08345EE9C9C59BF8B6EF84A /* DefaultLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLoadingIndicator.swift; sourceTree = "<group>"; };
+		3DFAA0C3A12A42A4E21808CF6312D055 /* SunshineBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-umbrella.h"; sourceTree = "<group>"; };
+		3E5D1F959A5FA244A08F785FF963821A /* PhotoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhotoPreviewCell.swift; sourceTree = "<group>"; };
 		445764ABC9D9EC5F0A67139809AAE7CD /* Pods-SunshineBrowser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4540A8456711DDD8308C49929AD5E926 /* Pods-SunshineBrowser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SunshineBrowser_Example-umbrella.h"; sourceTree = "<group>"; };
-		45AD9EEAF28764842DABD350DB497DB7 /* BrowserCustomPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserCustomPresentationController.swift; sourceTree = "<group>"; };
-		4FFD370E4EF3EDD2700EE710D70285DB /* PlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		4876E3962A09A2982BC083E6FBD9247B /* SunshineBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshineBrowser-dummy.m"; sourceTree = "<group>"; };
+		49A963085C4CCA369C09A3F58ACDF908 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C94A44E4FC6ABC5F1C3EB444C90BAA1 /* SunshineBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineBrowser.xcconfig; sourceTree = "<group>"; };
+		4EB24DA02DC9E1D017ED79C984B0EF27 /* BrowserTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionDelegate.swift; sourceTree = "<group>"; };
 		51AAFBC4FBFE5BA923E4E75B45449182 /* Pods_SunshineBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineBrowser_Tests.framework; path = "Pods-SunshineBrowser_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		51B78E939FD3C3BA6E341CE0F053D8C4 /* BrowserPreviewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPreviewModel.swift; sourceTree = "<group>"; };
 		535DA59D1A8445E1DEC97C7FDB3BDEE0 /* Pods-SunshineBrowser_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		5B7B6AC47DEC7465C5D787F33A161A0C /* PreviewContentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreviewContentType.swift; sourceTree = "<group>"; };
-		5CC3144DA2B0B8D8D3297CE50FBA282B /* DefaultImageLoader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultImageLoader.swift; sourceTree = "<group>"; };
+		5A70DAF3B133ED12F5A2CB55A097D500 /* BrowserCustomPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserCustomPresentationController.swift; sourceTree = "<group>"; };
+		5D38C9D9A83008AD8A5F16B4FFE77AF3 /* BrowserPreviewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPreviewModel.swift; sourceTree = "<group>"; };
 		60A973C9567E2C94AA5477AAAB6F205A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		635F1908868ADA608DB631EE1CB88829 /* BrowserMixPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserMixPreviewController.swift; sourceTree = "<group>"; };
+		616CA07282E0655264BB727F1C56C64B /* SinglePhotoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SinglePhotoPreviewCell.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6896BE1A097574863EA3A3D21B7CCBF3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6949B9E69601700E6326EE7CD6BBA86C /* Browser.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Browser.storyboard; path = SunshineBrowser/Assets/Browser.storyboard; sourceTree = "<group>"; };
-		6E76BAD00E4827EBE2D4D71F00058BC6 /* SunshineBrowser-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-Bridging-Header.h"; sourceTree = "<group>"; };
-		6FC8C94936A345184F8733571CE0F5FD /* BaseGestureAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BaseGestureAnimationController.swift; sourceTree = "<group>"; };
+		6A194B85D0DF241F1F880DF373D56FD5 /* PreviewContentType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PreviewContentType.swift; sourceTree = "<group>"; };
+		6B367EAAC10FB5A7A2B28456643104B1 /* UIImage+Current.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Current.swift"; sourceTree = "<group>"; };
 		72FC85895E6559E0C640EA660D5E14CE /* Pods-SunshineBrowser_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Example-resources.sh"; sourceTree = "<group>"; };
 		7847E700AA09200E0A5E86DCC9348141 /* Pods-SunshineBrowser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineBrowser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7D6E9FE4AF9560609A7BA54D1367AF36 /* Pods_SunshineBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineBrowser_Example.framework; path = "Pods-SunshineBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81B853C5BDAF393F2C490361C3C8E163 /* LoaderType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoaderType.swift; sourceTree = "<group>"; };
-		86D7EC945540710F6EE80A45A5643059 /*  ProgressIndicatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = " ProgressIndicatorType.swift"; sourceTree = "<group>"; };
+		82DCE4DE01F192CC29320A57C922FBA2 /* PlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		8942E2463F94C06BF2D1E7F8916E9071 /* Browser.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Browser.storyboard; path = SunshineBrowser/Assets/Browser.storyboard; sourceTree = "<group>"; };
+		8D69F225E97F7C09014E8618A2A8F408 /* BrowserPhotoPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPhotoPreviewController.swift; sourceTree = "<group>"; };
+		91243E3AA65893D633C3AF59B99D32CD /* VideoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoPreviewCell.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9B605D7F4741E1C2F5EB4E52EA71EE6C /* UIImage+Current.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Current.swift"; sourceTree = "<group>"; };
+		97FB0687BEC19902F06AB50858F090E9 /* PlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
 		9FA75EDC42BC5B47AD15DCDDB3CDB5AF /* SunshineBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshineBrowser.framework; path = SunshineBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23383D17F1D8FEEAAE24424F77A15A1 /* Pods-SunshineBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A316095DF5F1EBD68D0B605E51B193D8 /* SunshineBrowser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SunshineBrowser-dummy.m"; sourceTree = "<group>"; };
-		AED903160B8EAA5DB6CF5746B716A5A7 /* PlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		A3D5B3597DD498BCC2EBF2F08E37799C /* UIView+CaptureScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+CaptureScreen.swift"; sourceTree = "<group>"; };
+		AC335227B7D6E82C8A8A97AC5ADD489E /* BrowserTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionAnimator.swift; sourceTree = "<group>"; };
 		C19C81645AB3C0112580449AC3BB40C9 /* Pods-SunshineBrowser_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineBrowser_Tests-dummy.m"; sourceTree = "<group>"; };
-		C332FD29AD9768029AC29927BB9F2F48 /* VideoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoPreviewCell.swift; sourceTree = "<group>"; };
-		CA1D2CA1A5BC420602C3B5B837EA83B6 /* Bundle+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
+		C5647528AEFDA7EE4EF8898E3E93B558 /* UIImage+Color.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		CA1E2BA04B93AAD6934592BAF4DE23FF /* Pods-SunshineBrowser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineBrowser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D47539327A6A0675A43A278E6EE01806 /* BrowserTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionAnimator.swift; sourceTree = "<group>"; };
+		D043537A28FCB9E7AF0D9483A14524D0 /* BrowserConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserConfig.swift; sourceTree = "<group>"; };
+		D4F7A17F337A8BB807C69011A33FE112 /* SunshineBrowser.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SunshineBrowser.bundle; path = SunshineBrowser/Assets/SunshineBrowser.bundle; sourceTree = "<group>"; };
+		E1D708E51DE3E116E54974DF6CB2AE53 /* SunshineBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-prefix.pch"; sourceTree = "<group>"; };
+		E3787222567E7046EDA6A1054EA34F44 /* SunshineBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineBrowser.modulemap; sourceTree = "<group>"; };
 		E801D6DF37068CF600132EF26D241C6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F34132F2F86A9ADBE0460CFFA711174B /* SunshineBrowser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-umbrella.h"; sourceTree = "<group>"; };
+		EF1584041BE3CC9FF029C8E4FD6AD6D4 /*  ProgressIndicatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = " ProgressIndicatorType.swift"; sourceTree = "<group>"; };
 		F65A8A966D1744D3633020124800071F /* Pods-SunshineBrowser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineBrowser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F9D7810D65D6DEA7F69DF13CEFD2EC63 /* DefaultLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLoadingIndicator.swift; sourceTree = "<group>"; };
 		FA185D93A44F026851F90A79D87BCB45 /* Pods-SunshineBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FC4C1506955A24CF7B3681D1F07AE5DD /* LoaderType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoaderType.swift; sourceTree = "<group>"; };
 		FCE255941D946E5C39753B679DD89922 /* Pods-SunshineBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineBrowser_Example.modulemap"; sourceTree = "<group>"; };
 		FE47D8EBED83FBE89810ADA40A68DB1D /* Pods-SunshineBrowser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineBrowser_Tests.modulemap"; sourceTree = "<group>"; };
 		FE4B3FC2C81928A88F32DD29C8AD7170 /* Pods-SunshineBrowser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineBrowser_Example-dummy.m"; sourceTree = "<group>"; };
@@ -138,73 +142,92 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		033C63A13D343906214458E46DDF85BA /* Resources */ = {
+		077A895A6E1BBD3A06F202BE03959C28 /* SunshineBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				6949B9E69601700E6326EE7CD6BBA86C /* Browser.storyboard */,
-				0932C30B9EF1F16A791CD71749F9BBB0 /* SunshineBrowser.bundle */,
+				7983C1EDE632523AC63FC8DCE609545D /* Base */,
+				338AAC139B9AAF7E5A7FF4D8618A6943 /* Extension */,
+				4CEB3D90F6775ADC60A3DE400D9F8F8B /* Loader */,
+				E109C64DCD2A915F029E882BF07C3784 /* MixBrowser */,
+				A6D45F09ABF19ABDFF93203F96BD9FB5 /* Resources */,
+				14AF3DA88357697D081D83E5B33A66E1 /* SinglePhotoPreview */,
+				08577FFF01A71B29BC335625003C27BD /* Support Files */,
+				C2EBDD204A2EED56793CAFDC7848DD8D /* Transition */,
 			);
-			name = Resources;
+			name = SunshineBrowser;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		1B37AA9B1114DBFDF732157FE0B5D574 /* Support Files */ = {
+		08577FFF01A71B29BC335625003C27BD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6896BE1A097574863EA3A3D21B7CCBF3 /* Info.plist */,
-				06E64E010134A2D4A72769C515FB88ED /* SunshineBrowser.modulemap */,
-				267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */,
-				A316095DF5F1EBD68D0B605E51B193D8 /* SunshineBrowser-dummy.m */,
-				03DA2089B1A5066508DB1AF96E47EBC2 /* SunshineBrowser-prefix.pch */,
-				F34132F2F86A9ADBE0460CFFA711174B /* SunshineBrowser-umbrella.h */,
+				49A963085C4CCA369C09A3F58ACDF908 /* Info.plist */,
+				E3787222567E7046EDA6A1054EA34F44 /* SunshineBrowser.modulemap */,
+				4C94A44E4FC6ABC5F1C3EB444C90BAA1 /* SunshineBrowser.xcconfig */,
+				4876E3962A09A2982BC083E6FBD9247B /* SunshineBrowser-dummy.m */,
+				E1D708E51DE3E116E54974DF6CB2AE53 /* SunshineBrowser-prefix.pch */,
+				3DFAA0C3A12A42A4E21808CF6312D055 /* SunshineBrowser-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/SunshineBrowser";
 			sourceTree = "<group>";
 		};
+		14AF3DA88357697D081D83E5B33A66E1 /* SinglePhotoPreview */ = {
+			isa = PBXGroup;
+			children = (
+				8D69F225E97F7C09014E8618A2A8F408 /* BrowserPhotoPreviewController.swift */,
+				616CA07282E0655264BB727F1C56C64B /* SinglePhotoPreviewCell.swift */,
+			);
+			name = SinglePhotoPreview;
+			path = SunshineBrowser/Classes/SinglePhotoPreview;
+			sourceTree = "<group>";
+		};
+		338AAC139B9AAF7E5A7FF4D8618A6943 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				363F4E3E8FF4E51B04FE799379435B52 /* Bundle+Extension.swift */,
+				C5647528AEFDA7EE4EF8898E3E93B558 /* UIImage+Color.swift */,
+				6B367EAAC10FB5A7A2B28456643104B1 /* UIImage+Current.swift */,
+				A3D5B3597DD498BCC2EBF2F08E37799C /* UIView+CaptureScreen.swift */,
+			);
+			name = Extension;
+			path = SunshineBrowser/Classes/Extension;
+			sourceTree = "<group>";
+		};
 		426E84C6C68C639607ACC4D0378555FE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				FCB5578CC60A9842195B43D7E19DC386 /* SunshineBrowser */,
+				077A895A6E1BBD3A06F202BE03959C28 /* SunshineBrowser */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		5C4C22B5615909A3F33D9AFA0E5CDDB0 /* Base */ = {
+		4CEB3D90F6775ADC60A3DE400D9F8F8B /* Loader */ = {
 			isa = PBXGroup;
 			children = (
-				6FC8C94936A345184F8733571CE0F5FD /* BaseGestureAnimationController.swift */,
-				230EDD2E1A153F9E478FE7D3E8181798 /* BrowserConfig.swift */,
-				51B78E939FD3C3BA6E341CE0F053D8C4 /* BrowserPreviewModel.swift */,
-				4FFD370E4EF3EDD2700EE710D70285DB /* PlayerView.h */,
-				AED903160B8EAA5DB6CF5746B716A5A7 /* PlayerView.m */,
-				5B7B6AC47DEC7465C5D787F33A161A0C /* PreviewContentType.swift */,
-				6E76BAD00E4827EBE2D4D71F00058BC6 /* SunshineBrowser-Bridging-Header.h */,
-			);
-			name = Base;
-			path = SunshineBrowser/Classes/Base;
-			sourceTree = "<group>";
-		};
-		65B766B6BBFE9E31BCE7A47B2799D2F1 /* Loader */ = {
-			isa = PBXGroup;
-			children = (
-				86D7EC945540710F6EE80A45A5643059 /*  ProgressIndicatorType.swift */,
-				5CC3144DA2B0B8D8D3297CE50FBA282B /* DefaultImageLoader.swift */,
-				3B7F7289A08345EE9C9C59BF8B6EF84A /* DefaultLoadingIndicator.swift */,
-				14E4A11623F0CCC0F7C13EADBD4D63AF /* DefaultVideoLoader.swift */,
-				81B853C5BDAF393F2C490361C3C8E163 /* LoaderType.swift */,
+				EF1584041BE3CC9FF029C8E4FD6AD6D4 /*  ProgressIndicatorType.swift */,
+				02D36D314DA1F71C689CBECBD699426B /* DefaultImageLoader.swift */,
+				F9D7810D65D6DEA7F69DF13CEFD2EC63 /* DefaultLoadingIndicator.swift */,
+				0F03D1E129F497A16A4EF27982261C7E /* DefaultVideoLoader.swift */,
+				FC4C1506955A24CF7B3681D1F07AE5DD /* LoaderType.swift */,
 			);
 			name = Loader;
 			path = SunshineBrowser/Classes/Loader;
 			sourceTree = "<group>";
 		};
-		698DC9FF6AE940D61D3DC2DBACE4EA70 /* Extension */ = {
+		7983C1EDE632523AC63FC8DCE609545D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				CA1D2CA1A5BC420602C3B5B837EA83B6 /* Bundle+Extension.swift */,
-				9B605D7F4741E1C2F5EB4E52EA71EE6C /* UIImage+Current.swift */,
+				1B6688E43142F52AA39DDC0CA306F05A /* BaseGestureAnimationController.swift */,
+				D043537A28FCB9E7AF0D9483A14524D0 /* BrowserConfig.swift */,
+				5D38C9D9A83008AD8A5F16B4FFE77AF3 /* BrowserPreviewModel.swift */,
+				82DCE4DE01F192CC29320A57C922FBA2 /* PlayerView.h */,
+				97FB0687BEC19902F06AB50858F090E9 /* PlayerView.m */,
+				6A194B85D0DF241F1F880DF373D56FD5 /* PreviewContentType.swift */,
+				0C8805D8EF5DFC4012A18BEBD326AFDF /* SunshineBrowser-Bridging-Header.h */,
 			);
-			name = Extension;
-			path = SunshineBrowser/Classes/Extension;
+			name = Base;
+			path = SunshineBrowser/Classes/Base;
 			sourceTree = "<group>";
 		};
 		7CFD2867080267C8708A01B7E520EA5A /* Pods-SunshineBrowser_Example */ = {
@@ -223,17 +246,6 @@
 			);
 			name = "Pods-SunshineBrowser_Example";
 			path = "Target Support Files/Pods-SunshineBrowser_Example";
-			sourceTree = "<group>";
-		};
-		7D9BBB56729E706FD72C826EE55B4BE5 /* Transition */ = {
-			isa = PBXGroup;
-			children = (
-				45AD9EEAF28764842DABD350DB497DB7 /* BrowserCustomPresentationController.swift */,
-				D47539327A6A0675A43A278E6EE01806 /* BrowserTransitionAnimator.swift */,
-				15700F90E74FF1E2F561423E28B372E3 /* BrowserTransitionDelegate.swift */,
-			);
-			name = Transition;
-			path = SunshineBrowser/Classes/Transition;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -265,14 +277,13 @@
 			path = "Target Support Files/Pods-SunshineBrowser_Tests";
 			sourceTree = "<group>";
 		};
-		918ED8E10ED9A6D28B963E4231FCCB9F /* SinglePhotoPreview */ = {
+		A6D45F09ABF19ABDFF93203F96BD9FB5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2363246B52056E194932F965B9DAAAF3 /* BrowserPhotoPreviewController.swift */,
-				3A4642D823399BC1E3041212EC3312EF /* SinglePhotoPreviewCell.swift */,
+				8942E2463F94C06BF2D1E7F8916E9071 /* Browser.storyboard */,
+				D4F7A17F337A8BB807C69011A33FE112 /* SunshineBrowser.bundle */,
 			);
-			name = SinglePhotoPreview;
-			path = SunshineBrowser/Classes/SinglePhotoPreview;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -302,15 +313,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C20D9E27F02987BCA39B731CE0202F58 /* MixBrowser */ = {
+		C2EBDD204A2EED56793CAFDC7848DD8D /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				635F1908868ADA608DB631EE1CB88829 /* BrowserMixPreviewController.swift */,
-				20CB546C407C49782AC6D284A50EF294 /* PhotoPreviewCell.swift */,
-				C332FD29AD9768029AC29927BB9F2F48 /* VideoPreviewCell.swift */,
+				5A70DAF3B133ED12F5A2CB55A097D500 /* BrowserCustomPresentationController.swift */,
+				AC335227B7D6E82C8A8A97AC5ADD489E /* BrowserTransitionAnimator.swift */,
+				4EB24DA02DC9E1D017ED79C984B0EF27 /* BrowserTransitionDelegate.swift */,
 			);
-			name = MixBrowser;
-			path = SunshineBrowser/Classes/MixBrowser;
+			name = Transition;
+			path = SunshineBrowser/Classes/Transition;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -321,20 +332,15 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		FCB5578CC60A9842195B43D7E19DC386 /* SunshineBrowser */ = {
+		E109C64DCD2A915F029E882BF07C3784 /* MixBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				5C4C22B5615909A3F33D9AFA0E5CDDB0 /* Base */,
-				698DC9FF6AE940D61D3DC2DBACE4EA70 /* Extension */,
-				65B766B6BBFE9E31BCE7A47B2799D2F1 /* Loader */,
-				C20D9E27F02987BCA39B731CE0202F58 /* MixBrowser */,
-				033C63A13D343906214458E46DDF85BA /* Resources */,
-				918ED8E10ED9A6D28B963E4231FCCB9F /* SinglePhotoPreview */,
-				1B37AA9B1114DBFDF732157FE0B5D574 /* Support Files */,
-				7D9BBB56729E706FD72C826EE55B4BE5 /* Transition */,
+				13BBD2E0D880A3F74927A25A81989FAA /* BrowserMixPreviewController.swift */,
+				3E5D1F959A5FA244A08F785FF963821A /* PhotoPreviewCell.swift */,
+				91243E3AA65893D633C3AF59B99D32CD /* VideoPreviewCell.swift */,
 			);
-			name = SunshineBrowser;
-			path = ../..;
+			name = MixBrowser;
+			path = SunshineBrowser/Classes/MixBrowser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,7 +396,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 833C4129FF541609C9A622C3D937FF36 /* Build configuration list for PBXNativeTarget "SunshineBrowser" */;
 			buildPhases = (
-				7E12B6FEC4F47F35F5DCB72660587875 /* Sources */,
+				3E8CEB863961A29E0AF581039E11DE50 /* Sources */,
 				BF89EE2B8F15E6724DECB651A1CE1313 /* Frameworks */,
 				4A9F339468E40888066668638A3729BA /* Headers */,
 				613BB0E8C54DDEBA3DAD669983575396 /* Resources */,
@@ -471,31 +477,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7E12B6FEC4F47F35F5DCB72660587875 /* Sources */ = {
+		3E8CEB863961A29E0AF581039E11DE50 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07AF31E8125E892A2E1D5E1926956220 /*  ProgressIndicatorType.swift in Sources */,
-				13462E48C4F8032E098D49BA2FC60DF3 /* BaseGestureAnimationController.swift in Sources */,
-				A1683338957533763ECDBDFBD65CB4CF /* BrowserConfig.swift in Sources */,
-				E901F43CE3327A31FAF0623E170C1756 /* BrowserCustomPresentationController.swift in Sources */,
-				4CF7E966A766018A83C2D467124C06F3 /* BrowserMixPreviewController.swift in Sources */,
-				2FDAB6DEAC5F747DBED8F240297B3930 /* BrowserPhotoPreviewController.swift in Sources */,
-				B67F76A25ED9D64AADB1C1664F0DA49D /* BrowserPreviewModel.swift in Sources */,
-				2C78F2CD6A69446B52E8A0A079FA936B /* BrowserTransitionAnimator.swift in Sources */,
-				AA695370F67ADD9DCCA73E8812F10AF5 /* BrowserTransitionDelegate.swift in Sources */,
-				FD1CDB603E275252D476ED207CE933DF /* Bundle+Extension.swift in Sources */,
-				3C2E33CD5D2AEE338849A32D1FB6BA96 /* DefaultImageLoader.swift in Sources */,
-				25B9842430D88A8B2E3603582A4CC8F4 /* DefaultLoadingIndicator.swift in Sources */,
-				8586FA8528E7FF9EA56EADCF7C3FC1DB /* DefaultVideoLoader.swift in Sources */,
-				B9CBE0B39D14CAEDB546FF052C47154F /* LoaderType.swift in Sources */,
-				CCB5B35F4661BCB6D4241F9EBB091066 /* PhotoPreviewCell.swift in Sources */,
-				0B0121712619912F3A0ACBAC2C43F880 /* PlayerView.m in Sources */,
-				58680BCAD227855E46C7E4462161F313 /* PreviewContentType.swift in Sources */,
-				47B38DFB0B9FD868F30CA732E8004AF0 /* SinglePhotoPreviewCell.swift in Sources */,
-				E5FBEA6F71936DED04861B08C4DFC21C /* SunshineBrowser-dummy.m in Sources */,
-				3CF269F9C5C34412D8120E3C4F6909EB /* UIImage+Current.swift in Sources */,
-				7B24AB7973F1D982490D557AD6CB9742 /* VideoPreviewCell.swift in Sources */,
+				D22415A1F53278DE5544F894B27D7D2D /*  ProgressIndicatorType.swift in Sources */,
+				4108684E24B593D73D7A8BF464DB352E /* BaseGestureAnimationController.swift in Sources */,
+				487DF82C64DE60BCB625AC18C46D6B75 /* BrowserConfig.swift in Sources */,
+				D8AAFF7E5EDD804F4C4FDBA0FA9DD073 /* BrowserCustomPresentationController.swift in Sources */,
+				E86620BED4BD4752DBF61D57A8A39BBD /* BrowserMixPreviewController.swift in Sources */,
+				6DD329D30C2E5B066A6C087C3DF5C4F8 /* BrowserPhotoPreviewController.swift in Sources */,
+				C4A73E31739EB0F9B432B62CDD0B8521 /* BrowserPreviewModel.swift in Sources */,
+				7395753E337CA521389B2F575044849A /* BrowserTransitionAnimator.swift in Sources */,
+				D0F7483837F93D5173DF75AEA9E844CE /* BrowserTransitionDelegate.swift in Sources */,
+				5A04E840308B61656D4D493E72EF6352 /* Bundle+Extension.swift in Sources */,
+				9346E9AD6DB2E95F57F6C1CC1344DC0E /* DefaultImageLoader.swift in Sources */,
+				5B225699426E9EAC07D032806A6A07FC /* DefaultLoadingIndicator.swift in Sources */,
+				BF9B017E4A768B412C7A4DC5F130DFB9 /* DefaultVideoLoader.swift in Sources */,
+				19392C0A50056E415A7F64CB664B20C5 /* LoaderType.swift in Sources */,
+				79F6362904E7807DE4720191CBA893A9 /* PhotoPreviewCell.swift in Sources */,
+				15AB59CC3A34F226272A84EC51118A3D /* PlayerView.m in Sources */,
+				79529F7E9E5B84ECC6A0833CF9EDA587 /* PreviewContentType.swift in Sources */,
+				7A3F46D8A3B793F33DD0D538ED153FAF /* SinglePhotoPreviewCell.swift in Sources */,
+				7B82A022248C732498AD5BAB7BC54439 /* SunshineBrowser-dummy.m in Sources */,
+				D3AED8E5DE579F7B90EE1AFC99EFD757 /* UIImage+Color.swift in Sources */,
+				3E737F0AA1D3B2077A590F063A303752 /* UIImage+Current.swift in Sources */,
+				11A621792D1D798C99F378CD01B8D327 /* UIView+CaptureScreen.swift in Sources */,
+				027CEBC85E7D35BAD206E4E5C67FE041 /* VideoPreviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -604,7 +612,7 @@
 		};
 		16CA65F54808F26E891AEA9552EB677C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */;
+			baseConfigurationReference = 4C94A44E4FC6ABC5F1C3EB444C90BAA1 /* SunshineBrowser.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -639,7 +647,7 @@
 		};
 		27548D7027145E5541163EECDE4A5414 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 267AF6B04755FAE8A00C3EB39ED59A00 /* SunshineBrowser.xcconfig */;
+			baseConfigurationReference = 4C94A44E4FC6ABC5F1C3EB444C90BAA1 /* SunshineBrowser.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

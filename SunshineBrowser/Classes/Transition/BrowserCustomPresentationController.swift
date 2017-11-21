@@ -15,9 +15,9 @@ class BrowserCustomPresentationController: UIPresentationController {
     
     private var destinationFrame: CGRect?
     
-    private lazy var dimmingView: UIView = { [unowned self] in
+	lazy var dimmingView: UIView = { [unowned self] in
         let dimmingView = UIView()
-        dimmingView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        dimmingView.backgroundColor = .black
         dimmingView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(didTapDimmingView(_:))))
         return dimmingView
     }()

@@ -35,6 +35,10 @@ class VideoPreviewCell: UICollectionViewCell, PreviewContentType {
 			}
 		}
 	}
+	
+	var animationPlaceholderImage: UIImage? {
+		return playerView.captureScreen()
+	}
     
     var handlingView: UIView? {
         return playerView

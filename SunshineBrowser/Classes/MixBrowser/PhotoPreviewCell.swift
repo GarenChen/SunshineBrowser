@@ -13,6 +13,10 @@ class PhotoPreviewCell: UICollectionViewCell, UIScrollViewDelegate, PreviewConte
     @IBOutlet private weak var contentScrollView: UIScrollView!
     
     @IBOutlet private weak var contentImageView: UIImageView!
+	
+	var animationPlaceholderImage: UIImage? {
+		return contentImageView.image
+	}
     
     var handlingView: UIView? {
         return contentImageView
