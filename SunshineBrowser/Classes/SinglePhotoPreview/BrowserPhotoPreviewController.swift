@@ -59,7 +59,8 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
 	public required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
 	}
-    
+	
+	@discardableResult
     public class func show(in controller: UIViewController, images: [UIImage], selectedIndex: Int = 0, originalFrame: CGRect?) -> BrowserPhotoPreviewController {
 		let storyboard = UIStoryboard(name: "Browser", bundle: Bundle.current)
 		let previewController = storyboard.instantiateViewController(withIdentifier: "BrowserPhotoPreviewController") as! BrowserPhotoPreviewController

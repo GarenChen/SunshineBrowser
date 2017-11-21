@@ -28,6 +28,7 @@ public class BrowserMixPreviewController: BaseGestureAnimationController, UIColl
         return (collectionView.cellForItem(at: IndexPath(item: currentItemIndex, section: 0)) as? PreviewContentType)?.handlingView
     }
 
+	@discardableResult
 	public class func show(in controller: UIViewController, models: [BrowserPreviewModel], selectedIndex: Int = 0, originalFrame: CGRect?, animationPlaceholderImage: UIImage?, config: BrowserConfig = BrowserConfig()) -> BrowserMixPreviewController {
 		
 		BrowserConfig.shared.imageLoader = config.imageLoader
@@ -108,8 +109,8 @@ public class BrowserMixPreviewController: BaseGestureAnimationController, UIColl
 		case let .imageURLString(urlString, image):
 			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoPreviewCell", for: indexPath) as! PhotoPreviewCell
 			cell.model = (urlString, image)
-			cell.tapConentToHideBar = {
-				
+			cell.tapConentToHideBar = { [weak self] in
+				self?.dismiss(animated: true, completion: nil)
 			}
 			return cell
             

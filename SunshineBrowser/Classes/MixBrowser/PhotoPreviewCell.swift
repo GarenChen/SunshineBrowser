@@ -63,7 +63,7 @@ class PhotoPreviewCell: UICollectionViewCell, UIScrollViewDelegate, PreviewConte
         let doubleTap = UITapGestureRecognizer(target: self, action: #selector(doubleTapImageView(_:)))
         doubleTap.numberOfTapsRequired = 2
         addGestureRecognizer(doubleTap)
-        
+        singleTap.require(toFail: doubleTap)
     }
     
     func recoverSubview() {
