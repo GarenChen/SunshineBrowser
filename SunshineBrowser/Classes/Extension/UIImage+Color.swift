@@ -8,7 +8,7 @@
 import Foundation
 extension UIImage {
 	
-	public static func from(_ color: UIColor) -> UIImage {
+	static func from(_ color: UIColor) -> UIImage {
 		
 		let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
 		
