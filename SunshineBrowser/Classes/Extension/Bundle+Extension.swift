@@ -26,7 +26,7 @@ extension Bundle {
 }
 
 extension UIStoryboard {
-	convenience init(name: String) {
-		self.init(name: name, bundle: Bundle.current)
-	}
+//    static func initiate(name: String) -> UIStoryboard {
+//        return UIStoryboard(name: name, bundle: Bundle.current)
+//    }
 }
