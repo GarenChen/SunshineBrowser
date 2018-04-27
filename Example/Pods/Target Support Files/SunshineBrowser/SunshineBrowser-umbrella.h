@@ -10,7 +10,6 @@
 #endif
 #endif
 
-#import "PlayerView.h"
 #import "SunshineBrowser-Bridging-Header.h"
 
 FOUNDATION_EXPORT double SunshineBrowserVersionNumber;

@@ -12,6 +12,4 @@ import UIKit
 public enum BrowserPreviewModel {
     case image(UIImage?)
 	case imageURLString(String?, UIImage?)
-    case videoURL(URL?, UIImage?)
-	case videoURLString(String?, UIImage?)
 }

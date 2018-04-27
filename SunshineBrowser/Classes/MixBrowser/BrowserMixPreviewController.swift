@@ -101,8 +101,8 @@ public class BrowserMixPreviewController: BaseGestureAnimationController, UIColl
         case .image(let image):
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoPreviewCell", for: indexPath) as! PhotoPreviewCell
             cell.image = image
-            cell.tapConentToHideBar = {
-                
+            cell.tapConentToHideBar = { [weak self] in
+                self?.dismiss(animated: true, completion: nil)
             }
             return cell
 			
@@ -113,23 +113,6 @@ public class BrowserMixPreviewController: BaseGestureAnimationController, UIColl
 				self?.dismiss(animated: true, completion: nil)
 			}
 			return cell
-            
-        case let .videoURL(url, image):
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoPreviewCell", for: indexPath) as! VideoPreviewCell
-            cell.model = (url, image)
-            cell.tapConentToHideBar = {
-                
-            }
-            return cell
-			
-		case let .videoURLString(urlString, image):
-			let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "VideoPreviewCell", for: indexPath) as! VideoPreviewCell
-			cell.urlStringModel = (urlString, image)
-			cell.tapConentToHideBar = {
-				
-			}
-			return cell
-			
         }
 
     }

@@ -7,13 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		027CEBC85E7D35BAD206E4E5C67FE041 /* VideoPreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91243E3AA65893D633C3AF59B99D32CD /* VideoPreviewCell.swift */; };
 		0CC47A0E2C79D3FE36961D388AFE0ACD /* Pods-SunshineBrowser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4540A8456711DDD8308C49929AD5E926 /* Pods-SunshineBrowser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10DEB548DB4C6CFC352B0FFFE0D9FA3D /* SunshineBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D4F7A17F337A8BB807C69011A33FE112 /* SunshineBrowser.bundle */; };
 		11A621792D1D798C99F378CD01B8D327 /* UIView+CaptureScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D5B3597DD498BCC2EBF2F08E37799C /* UIView+CaptureScreen.swift */; };
-		15AB59CC3A34F226272A84EC51118A3D /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97FB0687BEC19902F06AB50858F090E9 /* PlayerView.m */; };
 		19392C0A50056E415A7F64CB664B20C5 /* LoaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4C1506955A24CF7B3681D1F07AE5DD /* LoaderType.swift */; };
-		23200F896901546B66181D359339F504 /* PlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 82DCE4DE01F192CC29320A57C922FBA2 /* PlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D8898454BDADA345957A694D05CD98B /* Pods-SunshineBrowser_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 09A76E7344A83F656FB3F71166C5AEFB /* Pods-SunshineBrowser_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E737F0AA1D3B2077A590F063A303752 /* UIImage+Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B367EAAC10FB5A7A2B28456643104B1 /* UIImage+Current.swift */; };
 		4019C38C5BE24E600C12532EACBF55D1 /* Browser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8942E2463F94C06BF2D1E7F8916E9071 /* Browser.storyboard */; };
@@ -73,7 +70,7 @@
 		49A963085C4CCA369C09A3F58ACDF908 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C94A44E4FC6ABC5F1C3EB444C90BAA1 /* SunshineBrowser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SunshineBrowser.xcconfig; sourceTree = "<group>"; };
 		4EB24DA02DC9E1D017ED79C984B0EF27 /* BrowserTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionDelegate.swift; sourceTree = "<group>"; };
-		51AAFBC4FBFE5BA923E4E75B45449182 /* Pods_SunshineBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineBrowser_Tests.framework; path = "Pods-SunshineBrowser_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51AAFBC4FBFE5BA923E4E75B45449182 /* Pods_SunshineBrowser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunshineBrowser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		535DA59D1A8445E1DEC97C7FDB3BDEE0 /* Pods-SunshineBrowser_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		5A70DAF3B133ED12F5A2CB55A097D500 /* BrowserCustomPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserCustomPresentationController.swift; sourceTree = "<group>"; };
 		5D38C9D9A83008AD8A5F16B4FFE77AF3 /* BrowserPreviewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPreviewModel.swift; sourceTree = "<group>"; };
@@ -84,14 +81,11 @@
 		6B367EAAC10FB5A7A2B28456643104B1 /* UIImage+Current.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Current.swift"; sourceTree = "<group>"; };
 		72FC85895E6559E0C640EA660D5E14CE /* Pods-SunshineBrowser_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SunshineBrowser_Example-resources.sh"; sourceTree = "<group>"; };
 		7847E700AA09200E0A5E86DCC9348141 /* Pods-SunshineBrowser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineBrowser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7D6E9FE4AF9560609A7BA54D1367AF36 /* Pods_SunshineBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SunshineBrowser_Example.framework; path = "Pods-SunshineBrowser_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		82DCE4DE01F192CC29320A57C922FBA2 /* PlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		7D6E9FE4AF9560609A7BA54D1367AF36 /* Pods_SunshineBrowser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SunshineBrowser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8942E2463F94C06BF2D1E7F8916E9071 /* Browser.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; name = Browser.storyboard; path = SunshineBrowser/Assets/Browser.storyboard; sourceTree = "<group>"; };
 		8D69F225E97F7C09014E8618A2A8F408 /* BrowserPhotoPreviewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserPhotoPreviewController.swift; sourceTree = "<group>"; };
-		91243E3AA65893D633C3AF59B99D32CD /* VideoPreviewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VideoPreviewCell.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		97FB0687BEC19902F06AB50858F090E9 /* PlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
-		9FA75EDC42BC5B47AD15DCDDB3CDB5AF /* SunshineBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SunshineBrowser.framework; path = SunshineBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FA75EDC42BC5B47AD15DCDDB3CDB5AF /* SunshineBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SunshineBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A23383D17F1D8FEEAAE24424F77A15A1 /* Pods-SunshineBrowser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A3D5B3597DD498BCC2EBF2F08E37799C /* UIView+CaptureScreen.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+CaptureScreen.swift"; sourceTree = "<group>"; };
 		AC335227B7D6E82C8A8A97AC5ADD489E /* BrowserTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserTransitionAnimator.swift; sourceTree = "<group>"; };
@@ -101,15 +95,15 @@
 		D043537A28FCB9E7AF0D9483A14524D0 /* BrowserConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BrowserConfig.swift; sourceTree = "<group>"; };
 		D4F7A17F337A8BB807C69011A33FE112 /* SunshineBrowser.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SunshineBrowser.bundle; path = SunshineBrowser/Assets/SunshineBrowser.bundle; sourceTree = "<group>"; };
 		E1D708E51DE3E116E54974DF6CB2AE53 /* SunshineBrowser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SunshineBrowser-prefix.pch"; sourceTree = "<group>"; };
-		E3787222567E7046EDA6A1054EA34F44 /* SunshineBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SunshineBrowser.modulemap; sourceTree = "<group>"; };
+		E3787222567E7046EDA6A1054EA34F44 /* SunshineBrowser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SunshineBrowser.modulemap; sourceTree = "<group>"; };
 		E801D6DF37068CF600132EF26D241C6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF1584041BE3CC9FF029C8E4FD6AD6D4 /*  ProgressIndicatorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = " ProgressIndicatorType.swift"; sourceTree = "<group>"; };
 		F65A8A966D1744D3633020124800071F /* Pods-SunshineBrowser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SunshineBrowser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		F9D7810D65D6DEA7F69DF13CEFD2EC63 /* DefaultLoadingIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultLoadingIndicator.swift; sourceTree = "<group>"; };
 		FA185D93A44F026851F90A79D87BCB45 /* Pods-SunshineBrowser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SunshineBrowser_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FC4C1506955A24CF7B3681D1F07AE5DD /* LoaderType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoaderType.swift; sourceTree = "<group>"; };
-		FCE255941D946E5C39753B679DD89922 /* Pods-SunshineBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineBrowser_Example.modulemap"; sourceTree = "<group>"; };
-		FE47D8EBED83FBE89810ADA40A68DB1D /* Pods-SunshineBrowser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SunshineBrowser_Tests.modulemap"; sourceTree = "<group>"; };
+		FCE255941D946E5C39753B679DD89922 /* Pods-SunshineBrowser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SunshineBrowser_Example.modulemap"; sourceTree = "<group>"; };
+		FE47D8EBED83FBE89810ADA40A68DB1D /* Pods-SunshineBrowser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SunshineBrowser_Tests.modulemap"; sourceTree = "<group>"; };
 		FE4B3FC2C81928A88F32DD29C8AD7170 /* Pods-SunshineBrowser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SunshineBrowser_Example-dummy.m"; sourceTree = "<group>"; };
 		FEA0DDB57D023FD8F4FAADF171CEBD75 /* Pods-SunshineBrowser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SunshineBrowser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,8 +215,6 @@
 				1B6688E43142F52AA39DDC0CA306F05A /* BaseGestureAnimationController.swift */,
 				D043537A28FCB9E7AF0D9483A14524D0 /* BrowserConfig.swift */,
 				5D38C9D9A83008AD8A5F16B4FFE77AF3 /* BrowserPreviewModel.swift */,
-				82DCE4DE01F192CC29320A57C922FBA2 /* PlayerView.h */,
-				97FB0687BEC19902F06AB50858F090E9 /* PlayerView.m */,
 				6A194B85D0DF241F1F880DF373D56FD5 /* PreviewContentType.swift */,
 				0C8805D8EF5DFC4012A18BEBD326AFDF /* SunshineBrowser-Bridging-Header.h */,
 			);
@@ -337,7 +329,6 @@
 			children = (
 				13BBD2E0D880A3F74927A25A81989FAA /* BrowserMixPreviewController.swift */,
 				3E5D1F959A5FA244A08F785FF963821A /* PhotoPreviewCell.swift */,
-				91243E3AA65893D633C3AF59B99D32CD /* VideoPreviewCell.swift */,
 			);
 			name = MixBrowser;
 			path = SunshineBrowser/Classes/MixBrowser;
@@ -350,7 +341,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23200F896901546B66181D359339F504 /* PlayerView.h in Headers */,
 				B86BD4798E749AA7AE36183114486A54 /* SunshineBrowser-Bridging-Header.h in Headers */,
 				E7DF323D285E956338E48C209AA7F56A /* SunshineBrowser-umbrella.h in Headers */,
 			);
@@ -496,14 +486,12 @@
 				BF9B017E4A768B412C7A4DC5F130DFB9 /* DefaultVideoLoader.swift in Sources */,
 				19392C0A50056E415A7F64CB664B20C5 /* LoaderType.swift in Sources */,
 				79F6362904E7807DE4720191CBA893A9 /* PhotoPreviewCell.swift in Sources */,
-				15AB59CC3A34F226272A84EC51118A3D /* PlayerView.m in Sources */,
 				79529F7E9E5B84ECC6A0833CF9EDA587 /* PreviewContentType.swift in Sources */,
 				7A3F46D8A3B793F33DD0D538ED153FAF /* SinglePhotoPreviewCell.swift in Sources */,
 				7B82A022248C732498AD5BAB7BC54439 /* SunshineBrowser-dummy.m in Sources */,
 				D3AED8E5DE579F7B90EE1AFC99EFD757 /* UIImage+Color.swift in Sources */,
 				3E737F0AA1D3B2077A590F063A303752 /* UIImage+Current.swift in Sources */,
 				11A621792D1D798C99F378CD01B8D327 /* UIView+CaptureScreen.swift in Sources */,
-				027CEBC85E7D35BAD206E4E5C67FE041 /* VideoPreviewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
