@@ -17,6 +17,8 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
     private var images: [UIImage] = []
     
     private var selectedIndex: Int = 0
+	
+	private var dimmingViewColor: UIColor = UIColor(white: 0, alpha: 0.5)
 
     static var controllerViewFrame: CGRect {
         return UIScreen.main.bounds.insetBy(dx: 15, dy: 15)
@@ -38,7 +40,7 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
         } else {
             automaticallyAdjustsScrollViewInsets = false
         }
-        (self.presentationController as? BrowserCustomPresentationController)?.dimmingView.backgroundColor = UIColor(white: 0, alpha: 0.5)
+        (self.presentationController as? BrowserCustomPresentationController)?.dimmingView.backgroundColor = self.dimmingViewColor
 		pageControl.numberOfPages = images.count
     }
 	
@@ -61,13 +63,13 @@ public class BrowserPhotoPreviewController: BaseGestureAnimationController, UICo
 	}
 	
 	@discardableResult
-    public class func show(in controller: UIViewController, images: [UIImage], selectedIndex: Int = 0, originalFrame: CGRect?) -> BrowserPhotoPreviewController {
+	public class func show(in controller: UIViewController, images: [UIImage], selectedIndex: Int = 0, originalFrame: CGRect?, dimmingViewColor: UIColor = UIColor(white: 0, alpha: 0.5)) -> BrowserPhotoPreviewController {
 		let storyboard = UIStoryboard(name: "Browser", bundle: Bundle.current)
 		let previewController = storyboard.instantiateViewController(withIdentifier: "BrowserPhotoPreviewController") as! BrowserPhotoPreviewController
 		
 		previewController.modalPresentationStyle = .custom
 		previewController.customTransitionDelegate = BrowserTransitionDelegate(placeholderImage: images[selectedIndex], originFrame: originalFrame, destinationFrame: BrowserPhotoPreviewController.controllerViewFrame)
-		
+		previewController.dimmingViewColor = dimmingViewColor
 		previewController.images = images
 		previewController.selectedIndex = selectedIndex
 		
